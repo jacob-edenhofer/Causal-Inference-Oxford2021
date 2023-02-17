@@ -2159,8 +2159,12 @@ $Deaths_{i}=\alpha + \beta_{1}Treated_{i}+\beta_{2}PostPeriod_{i}+\beta_{3}Treat
 where $i$ indexes sub-districts. The coefficient estimates can be
 written as conditional expectations:
 
-\$\$
-\end{aligned} \$\$
+$$
+\begin{aligned}
+\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0) \\\\ 
+\beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha \\\\ \beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha \\\\ \beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1) - E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}
+\end{aligned}
+$$
 
 ## DID and FE in the context of Fowler ([2013](#ref-fowler2013electoral))
 
