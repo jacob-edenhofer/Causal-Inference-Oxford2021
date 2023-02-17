@@ -1,0 +1,63 @@
+;subdistrict_name;year;deaths;water_company;treated;postperiod;id
+1;St. Saviour, Southwark;1849;283;Southwark & Vauxhall Company;0;0;1
+2;St. Saviour, Southwark;1854;371;Southwark & Vauxhall Company;0;1;1
+3;St. Olave;1849;157;Southwark & Vauxhall Company;0;0;2
+4;St. Olave;1854;161;Southwark & Vauxhall Company;0;1;2
+5;St. John, Horsleydown;1849;192;Southwark & Vauxhall Company;0;0;3
+6;St. John, Horsleydown;1854;148;Southwark & Vauxhall Company;0;1;3
+7;St. James, Bermondsey;1849;249;Southwark & Vauxhall Company;0;0;4
+8;St. James, Bermondsey;1854;362;Southwark & Vauxhall Company;0;1;4
+9;St. Mary Magdalen;1849;259;Southwark & Vauxhall Company;0;0;5
+10;St. Mary Magdalen;1854;244;Southwark & Vauxhall Company;0;1;5
+11;Leather Market;1849;226;Southwark & Vauxhall Company;0;0;6
+12;Leather Market;1854;237;Southwark & Vauxhall Company;0;1;6
+13;Rotherhithe;1849;352;Southwark & Vauxhall Company;0;0;7
+14;Rotherhithe;1854;282;Southwark & Vauxhall Company;0;1;7
+15;Wandsworth;1849;97;Southwark & Vauxhall Company;0;0;8
+16;Wandsworth;1854;59;Southwark & Vauxhall Company;0;1;8
+17;Battersea;1849;111;Southwark & Vauxhall Company;0;0;9
+18;Battersea;1854;171;Southwark & Vauxhall Company;0;1;9
+19;Putney;1849;8;Southwark & Vauxhall Company;0;0;10
+20;Putney;1854;9;Southwark & Vauxhall Company;0;1;10
+21;Camberwell;1849;235;Southwark & Vauxhall Company;0;0;11
+22;Camberwell;1854;240;Southwark & Vauxhall Company;0;1;11
+23;Peckham;1849;92;Southwark & Vauxhall Company;0;0;12
+24;Peckham;1854;174;Southwark & Vauxhall Company;0;1;12
+25;Christchurch, Southwark;1849;256;Southwark & Vauxhall Company;1;0;13
+26;Christchurch, Southwark;1854;113;Lambeth Company;1;1;13
+27;Kent Road;1849;267;Southwark & Vauxhall Company;1;0;14
+28;Kent Road;1854;174;Lambeth Company;1;1;14
+29;Borough Road;1849;312;Southwark & Vauxhall Company;1;0;15
+30;Borough Road;1854;270;Lambeth Company;1;1;15
+31;London Road;1849;257;Southwark & Vauxhall Company;1;0;16
+32;London Road;1854;93;Lambeth Company;1;1;16
+33;Trinity, Newington;1849;318;Southwark & Vauxhall Company;1;0;17
+34;Trinity, Newington;1854;210;Lambeth Company;1;1;17
+35;St. Peter, Walworth;1849;446;Southwark & Vauxhall Company;1;0;18
+36;St. Peter, Walworth;1854;388;Lambeth Company;1;1;18
+37;St. Mary, Newington;1849;143;Southwark & Vauxhall Company;1;0;19
+38;St. Mary, Newington;1854;92;Lambeth Company;1;1;19
+39;Waterloo Road (1st);1849;193;Southwark & Vauxhall Company;1;0;20
+40;Waterloo Road (1st);1854;58;Lambeth Company;1;1;20
+41;Waterloo Road (2nd);1849;243;Southwark & Vauxhall Company;1;0;21
+42;Waterloo Road (2nd);1854;117;Lambeth Company;1;1;21
+43;Lambeth Church (1st);1849;215;Southwark & Vauxhall Company;1;0;22
+44;Lambeth Church (1st);1854;49;Lambeth Company;1;1;22
+45;Lambeth Church (2nd);1849;544;Southwark & Vauxhall Company;1;0;23
+46;Lambeth Church (2nd);1854;193;Lambeth Company;1;1;23
+47;Kennington (1st);1849;187;Southwark & Vauxhall Company;1;0;24
+48;Kennington (1st);1854;303;Lambeth Company;1;1;24
+49;Kennington (2nd);1849;153;Southwark & Vauxhall Company;1;0;25
+50;Kennington (2nd);1854;142;Lambeth Company;1;1;25
+51;Brixton;1849;81;Southwark & Vauxhall Company;1;0;26
+52;Brixton;1854;48;Lambeth Company;1;1;26
+53;Clapham;1849;114;Southwark & Vauxhall Company;1;0;27
+54;Clapham;1854;165;Lambeth Company;1;1;27
+55;St. George, Camberwell;1849;176;Southwark & Vauxhall Company;1;0;28
+56;St. George, Camberwell;1854;132;Lambeth Company;1;1;28
+57;Norwood;1849;2;Lambeth Company;1;0;29
+58;Norwood;1854;10;Lambeth Company;1;1;29
+59;Streatham;1849;154;Lambeth Company;1;0;30
+60;Streatham;1854;15;Lambeth Company;1;1;30
+61;Sydenham;1849;5;Lambeth Company;1;0;31
+62;Sydenham;1854;12;Lambeth Company;1;1;31

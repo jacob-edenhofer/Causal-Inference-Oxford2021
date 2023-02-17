@@ -1,0 +1,472 @@
+,year,uce,entity.audited,auditor,id.entity,norm.value,irre,high.seve,low.seve,audit.2016,irre.2017,high.2017,low.2017,audit.2017
+1,2016,6,municipalidad de alto hospicio,uce i,1,0.105709625,30,14,16,1,27,0,27,1
+2,2016,6,municipalidad de colchane,uce i,3,-0.004730832,NA,NA,NA,0,47,15,32,1
+3,2016,6,municipalidad de iquique,uce i,5,0.165415987,31,19,12,1,21,11,10,1
+4,2016,7,municipalidad de antofagasta,uce ii,8,-0.11017316,16,4,11,1,30,14,16,1
+5,2016,7,municipalidad de calama,uce ii,9,-0.064935065,13,8,5,1,28,20,8,1
+6,2016,7,municipalidad de mejillones,uce ii,11,0.217965368,NA,NA,NA,0,31,25,6,1
+7,2016,7,municipalidad de sierra gorda,uce ii,14,0.124891775,16,6,10,1,38,26,12,1
+8,2016,8,municipalidad de chanaral,uce iii,19,-0.055987895,NA,NA,NA,0,26,22,4,1
+9,2016,8,municipalidad de copiapo,uce iii,20,0.026372676,16,8,8,1,44,16,28,1
+10,2016,9,municipalidad de coquimbo,uce iv,29,0.196255507,22,18,4,1,16,11,5,1
+11,2016,9,municipalidad de illapel,uce iv,30,0.035903084,NA,NA,NA,0,84,55,29,1
+12,2016,9,municipalidad de la higuera,uce iv,31,-0.024008811,NA,NA,NA,0,43,13,30,1
+13,2016,9,municipalidad de la serena,uce iv,32,-0.131718062,12,10,2,1,31,24,7,1
+14,2016,9,municipalidad de monte patria,uce iv,34,0.215859031,17,15,2,1,66,3,63,1
+15,2016,9,municipalidad de salamanca,uce iv,39,0.047797357,32,20,12,1,62,57,5,1
+16,2016,10,municipalidad de cartagena,uce v,45,0.19601074,27,26,1,1,14,8,6,1
+17,2016,10,municipalidad de juan fernandez,uce v,53,0.331031837,NA,NA,NA,0,43,23,20,1
+18,2016,10,municipalidad de la ligua,uce v,55,-0.055619486,NA,NA,NA,0,17,10,7,1
+19,2016,10,municipalidad de olmue,uce v,60,0.028385117,NA,NA,NA,0,40,28,12,1
+20,2016,10,municipalidad de san felipe,uce v,72,0.137322593,31,18,13,1,31,24,7,1
+21,2016,10,municipalidad de valparaiso,uce v,75,-0.054085155,28,20,8,1,42,38,4,1
+22,2016,10,municipalidad de vina del mar,uce v,77,-0.104909858,32,16,17,1,35,32,3,1
+23,2016,11,municipalidad de las cabras,uce vi,87,0.076424361,NA,NA,NA,0,47,47,0,1
+24,2016,11,municipalidad de machali,uce vi,90,-0.066994106,NA,NA,NA,0,24,12,12,1
+25,2016,11,municipalidad de malloa,uce vi,91,0.059921415,NA,NA,NA,0,27,15,12,1
+26,2016,11,municipalidad de mostazal,uce vi,93,0.222986248,15,8,7,1,28,21,7,1
+27,2016,11,municipalidad de navidad,uce vi,95,0.05540275,12,11,1,1,26,17,9,1
+28,2016,11,municipalidad de paredones,uce vi,98,0.124950884,79,61,18,1,68,68,0,1
+29,2016,11,municipalidad de quinta de tilcoco,uce vi,105,-0.10589391,NA,NA,NA,0,40,25,15,1
+30,2016,11,municipalidad de rancagua,uce vi,106,-0.022003929,NA,NA,NA,0,49,37,12,1
+31,2016,11,municipalidad de rengo,uce vi,107,-0.012966601,18,18,0,1,15,13,2,1
+32,2016,11,municipalidad de san fernando,uce vi,109,0.021414538,38,36,2,1,83,71,12,1
+33,2016,12,municipalidad de colbun,uce vii,114,-0.112513721,51,36,15,1,43,20,23,1
+34,2016,12,municipalidad de curico,uce vii,117,-0.040340285,43,31,12,1,50,49,1,1
+35,2016,12,municipalidad de hualane,uce vii,119,0.274698134,NA,NA,NA,0,59,54,5,1
+36,2016,12,municipalidad de molina,uce vii,124,0.034851811,38,15,23,1,41,35,6,1
+37,2016,12,municipalidad de pelarco,uce vii,126,-0.022228321,NA,NA,NA,0,51,38,13,1
+38,2016,12,municipalidad de pelluhue,uce vii,127,0.087541164,NA,NA,NA,0,52,19,33,1
+39,2016,12,municipalidad de rauco,uce vii,129,-0.013721186,NA,NA,NA,0,70,35,35,1
+40,2016,12,municipalidad de rio claro,uce vii,131,0.074094402,NA,NA,NA,0,43,33,10,1
+41,2016,12,municipalidad de romeral,uce vii,132,-0.034302964,NA,NA,NA,0,65,49,16,1
+42,2016,12,municipalidad de yerbas buenas,uce vii,141,0.097420417,NA,NA,NA,0,60,58,2,1
+43,2016,13,municipalidad de alto bio bio,uce viii,142,0.198552223,NA,NA,NA,0,49,27,22,1
+44,2016,13,municipalidad de antuco,uce viii,143,0.08893485,NA,NA,NA,0,49,28,21,1
+45,2016,13,municipalidad de arauco,uce viii,144,0,NA,NA,NA,0,39,33,6,1
+46,2016,13,municipalidad de bulnes,uce viii,145,-0.068252327,NA,NA,NA,0,87,28,59,1
+47,2016,13,municipalidad de canete,uce viii,147,-0.023784902,NA,NA,NA,0,48,39,9,1
+48,2016,13,municipalidad de chiguayante,uce viii,148,-0.1057394,NA,NA,NA,0,24,10,14,1
+49,2016,13,municipalidad de chillan,uce viii,149,-0.138314374,25,14,12,1,22,16,6,1
+50,2016,13,municipalidad de cobquecura,uce viii,151,0.038779731,97,76,21,1,17,16,1,1
+51,2016,13,municipalidad de coelemu,uce viii,152,0.092037229,NA,NA,NA,0,32,19,13,1
+52,2016,13,municipalidad de concepcion,uce viii,154,-0.30868666,14,7,6,1,34,24,10,1
+53,2016,13,municipalidad de contulmo,uce viii,155,0.124870734,34,27,7,1,43,23,20,1
+54,2016,13,municipalidad de coronel,uce viii,156,0.130041365,27,14,13,1,45,37,8,1
+55,2016,13,municipalidad de florida,uce viii,159,0.179937952,NA,NA,NA,0,23,16,7,1
+56,2016,13,municipalidad de hualpen,uce viii,160,-0.114788004,20,6,14,1,15,4,11,1
+57,2016,13,municipalidad de hualpen,uce viii,160,-0.114788004,20,6,14,1,15,4,11,1
+58,2016,13,municipalidad de lota,uce viii,166,0.081437435,12,6,6,1,13,10,2,1
+59,2016,13,municipalidad de pemuco,uce viii,172,0.101602896,NA,NA,NA,0,59,39,20,1
+60,2016,13,municipalidad de penco,uce viii,173,0.131851086,13,4,9,1,27,20,7,1
+61,2016,13,municipalidad de san carlos,uce viii,181,0.02016546,27,21,6,1,33,19,14,1
+62,2016,13,municipalidad de san ignacio,uce viii,183,0.172182006,NA,NA,NA,0,73,22,51,1
+63,2016,13,municipalidad de san nicolas,uce viii,184,-0.000517063,NA,NA,NA,0,27,14,13,1
+64,2016,13,municipalidad de talcahuano,uce viii,189,-0.159255429,23,14,8,1,14,8,6,1
+65,2016,13,municipalidad de talcahuano,uce viii,189,-0.159255429,23,14,8,1,14,8,6,1
+66,2016,13,municipalidad de tirua,uce viii,190,0.38753878,NA,NA,NA,0,46,35,11,1
+67,2016,13,municipalidad de yungay,uce viii,195,0.032057911,NA,NA,NA,0,49,35,14,1
+68,2016,14,municipalidad de cholchol,uce ix,198,0.242804428,52,27,25,1,33,26,7,1
+69,2016,14,municipalidad de lautaro,uce ix,207,0.111931119,NA,NA,NA,0,41,36,5,1
+70,2016,14,municipalidad de lumaco,uce ix,211,0.159655597,NA,NA,NA,0,36,10,26,1
+71,2016,14,municipalidad de pucon,uce ix,217,-0.028536285,NA,NA,NA,0,45,29,16,1
+72,2016,14,municipalidad de temuco,uce ix,221,-0.023616236,24,19,5,1,44,36,9,1
+73,2016,14,municipalidad de victoria,uce ix,225,-0.042066421,NA,NA,NA,0,66,50,16,1
+74,2016,15,municipalidad de ancud,uce x,228,0.029228999,22,13,9,1,40,33,7,1
+75,2016,15,municipalidad de calbuco,uce x,229,-0.049021864,22,16,6,1,33,10,23,1
+76,2016,15,municipalidad de castro,uce x,230,-0.056386651,25,19,6,1,37,26,11,1
+77,2016,15,municipalidad de frutillar,uce x,237,0.029919448,NA,NA,NA,0,85,77,8,1
+78,2016,15,municipalidad de osorno,uce x,243,-0.111622555,NA,NA,NA,0,20,8,12,1
+79,2016,15,municipalidad de puerto varas,uce x,247,-0.101265823,NA,NA,NA,0,41,32,9,1
+80,2016,16,municipalidad de aysen,uce xi,258,-0.006380857,45,26,19,1,25,14,11,1
+81,2016,16,municipalidad de chile chico,uce xi,259,0.13998006,29,21,8,1,21,14,7,1
+82,2016,16,municipalidad de cisnes,uce xi,260,-0.007577268,NA,NA,NA,0,71,58,12,1
+83,2016,16,municipalidad de cochrane,uce xi,261,-0.047856431,NA,NA,NA,0,27,21,6,1
+84,2016,16,municipalidad de coyhaique,uce xi,262,-0.027318046,36,20,16,1,37,26,11,1
+85,2016,16,municipalidad de lago verde,uce xi,264,-0.101495513,NA,NA,NA,0,29,18,11,1
+86,2016,17,municipalidad de laguna blanca,uce xii,268,-0.099052221,NA,NA,NA,0,31,28,3,1
+87,2016,17,municipalidad de porvenir,uce xii,271,-0.032150158,NA,NA,NA,0,14,10,4,1
+88,2016,17,municipalidad de punta arenas,uce xii,273,0.10128229,30,22,8,1,28,25,3,1
+89,2016,17,municipalidad de torres del paine,uce xii,277,-0.066344546,NA,NA,NA,0,14,10,4,1
+90,2016,31,municipalidad de alhue,dir comite 2,278,0.023509297,38,24,14,1,24,9,15,1
+91,2016,20,municipalidad de alhue,dmun,278,0.104474951,38,24,14,1,24,9,15,1
+92,2016,31,municipalidad de buin,dir comite 2,279,-0.095533234,22,15,7,1,36,25,11,1
+93,2016,20,municipalidad de buin,dmun,279,-0.038866108,22,15,7,1,36,25,11,1
+94,2016,31,municipalidad de calera de tango,dir comite 2,280,0,22,16,6,1,47,38,9,1
+95,2016,20,municipalidad de calera de tango,dmun,280,0.08771617,22,16,6,1,47,38,9,1
+96,2016,31,municipalidad de cerrillos,dir comite 2,281,-0.229322505,58,24,34,1,16,10,6,1
+97,2016,20,municipalidad de cerrillos,dmun,281,-0.085041897,58,24,34,1,16,10,6,1
+98,2016,31,municipalidad de cerro navia,dir comite 2,282,0.044240222,37,28,8,1,36,15,21,1
+99,2016,20,municipalidad de cerro navia,dmun,282,-0.056516313,37,28,8,1,36,15,21,1
+100,2016,31,municipalidad de conchali,dir comite 2,284,-0.085702073,27,21,6,1,30,21,9,1
+101,2016,20,municipalidad de conchali,dmun,284,-0.209306472,27,21,6,1,30,21,9,1
+102,2016,31,municipalidad de el bosque,dir comite 2,286,-0.061765334,14,8,7,1,31,20,10,1
+103,2016,20,municipalidad de el bosque,dmun,286,0.023890177,14,8,7,1,31,20,10,1
+104,2016,20,municipalidad de el monte,dmun,287,-0.146193617,NA,NA,NA,0,22,13,9,1
+105,2016,31,municipalidad de el monte,dir comite 2,287,-0.421885018,NA,NA,NA,0,22,13,9,1
+106,2016,31,municipalidad de estacion central,dir comite 2,288,-0.161359265,32,20,12,1,40,29,11,1
+107,2016,20,municipalidad de estacion central,dmun,288,-0.119985737,32,20,12,1,40,29,11,1
+108,2016,31,municipalidad de huechuraba,dir comite 2,289,0.145116478,21,17,4,1,34,19,15,1
+109,2016,20,municipalidad de huechuraba,dmun,289,-0.015510786,21,17,4,1,34,19,15,1
+110,2016,31,municipalidad de independencia,dir comite 2,290,-0.06561231,NA,NA,NA,0,16,8,8,1
+111,2016,20,municipalidad de independencia,dmun,290,-0.238901765,NA,NA,NA,0,16,8,8,1
+112,2016,31,municipalidad de isla de maipo,dir comite 2,291,-0.123530669,26,13,13,1,25,11,14,1
+113,2016,20,municipalidad de isla de maipo,dmun,291,-0.135853093,26,13,13,1,25,11,14,1
+114,2016,31,municipalidad de la cisterna,dir comite 2,292,0.159863219,26,12,14,1,24,19,5,1
+115,2016,20,municipalidad de la cisterna,dmun,292,-0.20270993,26,12,14,1,24,19,5,1
+116,2016,31,municipalidad de la florida,dir comite 2,293,-0.018166275,29,10,20,1,13,10,3,1
+117,2016,20,municipalidad de la florida,dmun,293,0.244250312,29,10,20,1,13,10,3,1
+118,2016,31,municipalidad de la granja,dir comite 2,294,0.097670442,33,22,10,1,38,25,13,1
+119,2016,20,municipalidad de la granja,dmun,294,-0.073275094,33,22,10,1,38,25,13,1
+120,2016,20,municipalidad de la pintana,dmun,295,0.015689071,16,14,2,1,11,9,2,1
+121,2016,31,municipalidad de la pintana,dir comite 2,295,-0.383842701,16,14,2,1,11,9,2,1
+122,2016,31,municipalidad de la reina,dir comite 2,296,-0.149177175,55,14,41,1,21,11,10,1
+123,2016,20,municipalidad de la reina,dmun,296,-0.251381708,55,14,41,1,21,11,10,1
+124,2016,20,municipalidad de lampa,dmun,297,0.066321983,34,12,22,1,22,16,6,1
+125,2016,31,municipalidad de lampa,dir comite 2,297,-0.36888224,34,12,22,1,22,16,6,1
+126,2016,31,municipalidad de las condes,dir comite 2,298,0.184227399,26,15,11,1,19,13,5,1
+127,2016,20,municipalidad de las condes,dmun,298,0.236049207,26,15,11,1,19,13,5,1
+128,2016,31,municipalidad de lo barnechea,dir comite 2,299,0.048087198,26,18,8,1,16,8,9,1
+129,2016,20,municipalidad de lo barnechea,dmun,299,-0.003922268,26,18,8,1,16,8,9,1
+130,2016,31,municipalidad de lo espejo,dir comite 2,300,0.130156016,53,46,8,1,16,10,6,1
+131,2016,20,municipalidad de lo espejo,dmun,300,0.043144946,53,46,8,1,16,10,6,1
+132,2016,20,municipalidad de lo prado,dmun,301,-0.075592797,5,0,5,1,18,15,3,1
+133,2016,31,municipalidad de lo prado,dir comite 2,301,-0.338533875,5,0,5,1,18,15,3,1
+134,2016,31,municipalidad de macul,dir comite 2,302,-0.160718102,24,17,7,1,11,8,3,1
+135,2016,20,municipalidad de macul,dmun,302,-0.215189873,24,17,7,1,11,8,3,1
+136,2016,31,municipalidad de maipu,dir comite 2,303,0.148536012,27,12,16,1,53,37,16,1
+137,2016,20,municipalidad de maipu,dmun,303,0.238010341,27,12,16,1,53,37,16,1
+138,2016,20,municipalidad de melipilla,dmun,305,0.100196113,55,53,2,1,36,28,8,1
+139,2016,31,municipalidad de melipilla,dir comite 2,305,-0.367386194,55,53,2,1,36,28,8,1
+140,2016,31,municipalidad de nunoa,dir comite 2,306,-0.050651849,28,20,8,1,26,23,3,1
+141,2016,20,municipalidad de nunoa,dmun,306,-0.057229453,28,20,8,1,26,23,3,1
+142,2016,31,municipalidad de padre hurtado,dir comite 2,307,0.045522548,9,6,3,1,27,24,3,1
+143,2016,20,municipalidad de padre hurtado,dmun,307,-0.037618114,9,6,3,1,27,24,3,1
+144,2016,31,municipalidad de paine,dir comite 2,308,-0.248984826,38,24,14,1,20,16,4,1
+145,2016,20,municipalidad de paine,dmun,308,0.044927795,38,24,14,1,20,16,4,1
+146,2016,31,municipalidad de penaflor,dir comite 2,310,-0.180594144,47,42,6,1,47,21,26,1
+147,2016,20,municipalidad de penaflor,dmun,310,-0.155821002,47,42,6,1,47,21,26,1
+148,2016,20,municipalidad de pirque,dmun,312,-0.039757533,NA,NA,NA,0,20,8,12,1
+149,2016,31,municipalidad de pirque,dir comite 2,312,-0.438127805,NA,NA,NA,0,20,8,12,1
+150,2016,31,municipalidad de pudahuel,dir comite 2,314,-0.137422526,37,14,23,1,21,14,6,1
+151,2016,20,municipalidad de pudahuel,dmun,314,0.122660011,37,14,23,1,21,14,6,1
+152,2016,31,municipalidad de puente alto,dir comite 2,315,0.167343449,12,5,7,1,38,23,15,1
+153,2016,20,municipalidad de puente alto,dmun,315,0.39739704,12,5,7,1,38,23,15,1
+154,2016,31,municipalidad de quilicura,dir comite 2,316,-0.113699508,20,15,5,1,15,11,4,1
+155,2016,20,municipalidad de quilicura,dmun,316,0.003565698,20,15,5,1,15,11,4,1
+156,2016,31,municipalidad de quinta normal,dir comite 2,317,-0.056849754,21,10,11,1,17,3,14,1
+157,2016,20,municipalidad de quinta normal,dmun,317,-0.069709396,21,10,11,1,17,3,14,1
+158,2016,31,municipalidad de renca,dir comite 2,319,-0.210728788,34,19,16,1,27,21,6,1
+159,2016,20,municipalidad de renca,dmun,319,-0.122838296,34,19,16,1,27,21,6,1
+160,2016,31,municipalidad de san bernardo,dir comite 2,320,-0.125881599,NA,NA,NA,0,25,20,5,1
+161,2016,20,municipalidad de san bernardo,dmun,320,0.023177037,NA,NA,NA,0,25,20,5,1
+162,2016,31,municipalidad de san joaquin,dir comite 2,321,-0.013678136,43,28,15,1,10,6,4,1
+163,2016,20,municipalidad de san joaquin,dmun,321,-0.141379925,43,28,15,1,10,6,4,1
+164,2016,31,municipalidad de san jose de maipo,dir comite 2,322,-0.156016243,NA,NA,NA,0,17,11,6,1
+165,2016,20,municipalidad de san jose de maipo,dmun,322,-0.182563737,NA,NA,NA,0,17,11,6,1
+166,2016,20,municipalidad de san miguel,dmun,323,-0.006774826,20,12,8,1,29,9,20,1
+167,2016,31,municipalidad de san miguel,dir comite 2,323,-0.357127591,20,12,8,1,29,9,20,1
+168,2016,31,municipalidad de santiago,dir comite 2,326,0.103013464,24,12,12,1,18,11,7,1
+169,2016,20,municipalidad de santiago,dmun,326,0.066321983,24,12,12,1,18,11,7,1
+170,2016,20,municipalidad de talagante,dmun,327,0.077019076,NA,NA,NA,0,21,13,8,1
+171,2016,31,municipalidad de talagante,dir comite 2,327,-0.441333618,NA,NA,NA,0,21,13,8,1
+172,2016,31,municipalidad de vitacura,dir comite 2,329,-0.27185296,25,19,6,1,15,10,6,1
+173,2016,20,municipalidad de vitacura,dmun,329,-0.122660011,25,19,6,1,15,10,6,1
+174,2016,23,municipalidad de futrono,uce xiv,331,0.076965517,NA,NA,NA,0,29,15,14,1
+175,2016,23,municipalidad de mafil,uce xiv,336,0.135448276,15,13,2,1,28,23,5,1
+176,2016,23,municipalidad de mariquina,uce xiv,337,-0.080827586,NA,NA,NA,0,12,9,4,1
+177,2016,23,municipalidad de panguipulli,uce xiv,339,0.048275862,22,13,9,1,29,23,6,1
+178,2016,23,municipalidad de rio bueno,uce xiv,340,0.010482759,NA,NA,NA,0,26,24,2,1
+179,2016,23,municipalidad de valdivia,uce xiv,341,0.131310345,18,12,7,1,45,41,4,1
+180,2016,24,municipalidad de arica,uce xv,342,0,42,26,16,1,28,16,12,1
+181,2016,24,municipalidad de camarones,uce xv,343,-0.023374416,31,21,10,1,57,41,16,1
+182,2016,24,municipalidad de general lagos,uce xv,344,-0.116022099,NA,NA,NA,0,16,9,7,1
+183,2016,24,municipalidad de putre,uce xv,345,0.089247769,43,43,0,1,14,10,4,1
+184,2016,8,departamento de administracion de educacion municipal de copiapo,uce iii,361,0.100518807,NA,NA,NA,0,13,7,6,1
+185,2016,8,departamento de administracion de educacion municipal de tierra amarilla,uce iii,365,-0.012105491,NA,NA,NA,0,13,7,6,1
+186,2016,8,departamento de administracion de educacion municipal de vallenar,uce iii,366,-0.368352789,NA,NA,NA,0,40,39,1,1
+187,2016,9,departamento de educacion de canela,uce iv,368,-0.217400881,NA,NA,NA,0,22,17,5,1
+188,2016,9,departamento de educacion municipal de coquimbo,uce iv,370,-0.090528634,25,13,12,1,52,28,24,1
+189,2016,9,departamento de educacion municipal de paihuano,uce iv,376,-0.280396476,NA,NA,NA,0,43,33,10,1
+190,2016,9,departamento de educacion municipal de rio hurtado,uce iv,378,-0.355066079,NA,NA,NA,0,28,26,2,1
+191,2016,12,departamento de educacion de talca,uce vii,470,-0.145993414,NA,NA,NA,0,30,24,6,1
+192,2016,13,departamento de administracion de educacion municipal de concepcion,uce viii,486,-0.255946225,NA,NA,NA,0,30,16,14,1
+193,2016,13,departamento de administracion de educacion municipal de san rosendo,uce viii,518,-0.293174767,NA,NA,NA,0,25,17,8,1
+194,2016,14,departamento de educacion municipal de angol,uce ix,527,-0.2,NA,NA,NA,0,20,16,4,1
+195,2016,14,departamento de educacion municipal de collipulli,uce ix,530,-0.501599016,NA,NA,NA,0,11,5,6,1
+196,2016,14,departamento de educacion municipal de temuco,uce ix,552,-0.177613776,9,6,3,1,26,11,15,1
+197,2016,15,departamento de educacion de osorno,uce x,569,-0.404602992,NA,NA,NA,0,25,12,13,1
+198,2016,15,departamento de educacion de puerto montt,uce x,571,0.016800921,NA,NA,NA,0,29,18,11,1
+199,2016,15,departamento de educacion de puerto octay,uce x,573,-0.072266974,NA,NA,NA,0,31,22,9,1
+200,2016,15,departamento de educacion de san pablo,uce x,579,-0.2570771,NA,NA,NA,0,64,42,22,1
+201,2016,16,departamento de educacion de coyhaique,uce xi,583,-0.124027916,NA,NA,NA,0,36,35,1,1
+202,2016,20,departamento de educacion de el bosque,dmun,601,-0.293100374,NA,NA,NA,0,31,27,4,1
+203,2016,20,departamento de educacion la cisterna,dmun,606,-0.316633981,NA,NA,NA,0,35,26,9,1
+204,2016,20,departamento de educacion de la granja,dmun,607,-0.177750045,NA,NA,NA,0,40,9,31,1
+205,2016,20,departamento de educacion de la pintana,dmun,608,-0.494384026,NA,NA,NA,0,28,22,6,1
+206,2016,20,departamento de educacion de santiago,dmun,620,-0.203244785,NA,NA,NA,0,10,5,5,1
+207,2016,23,departamento de educacion de la union,uce xiv,624,-0.409655172,NA,NA,NA,0,34,32,2,1
+208,2016,23,departamento de educacion de los lagos,uce xiv,627,-0.052137931,NA,NA,NA,0,24,17,7,1
+209,2016,23,departamento de educacion de mariquina,uce xiv,629,-0.20137931,NA,NA,NA,0,28,12,16,1
+210,2016,23,departamento de educacion de rio bueno,uce xiv,631,-0.201103448,NA,NA,NA,0,28,20,8,1
+211,2016,23,departamento de educacion de valdivia,uce xiv,632,0.106758621,NA,NA,NA,0,32,10,22,1
+212,2016,24,departamento de educacion municipal de arica,uce xv,633,-0.063110922,NA,NA,NA,0,36,25,11,1
+213,2016,8,departamento de salud municipal de vallenar,uce iii,655,-0.004755728,NA,NA,NA,0,48,36,12,1
+214,2016,9,departamento de salud municipal de la higuera,uce iv,660,0.09339207,NA,NA,NA,0,32,22,10,1
+215,2016,10,departamento de salud de quillota,uce v,692,-0.270809359,NA,NA,NA,0,13,13,0,1
+216,2016,11,departamento de salud chimbarongo,uce vi,701,-0.325540275,NA,NA,NA,0,24,9,15,1
+217,2016,11,departamento de salud san vicente de tagua tagua,uce vi,727,-0.102946955,NA,NA,NA,0,29,10,19,1
+218,2016,14,departamento de salud municipal de lautaro,uce ix,821,-0.327921279,NA,NA,NA,0,33,9,24,1
+219,2016,14,departamento de salud municipal de temuco,uce ix,835,-0.302829028,NA,NA,NA,0,20,6,14,1
+220,2016,15,departamento de salud de puerto montt,uce x,852,-0.129113924,NA,NA,NA,0,24,15,9,1
+221,2016,20,departamento de salud de la granja,dmun,873,-0.24852915,NA,NA,NA,0,38,34,4,1
+222,2016,20,departamento de salud de la pintana,dmun,874,-0.177393475,NA,NA,NA,0,25,15,10,1
+223,2016,20,departamento de salud de lo espejo,dmun,876,-0.146193617,14,11,3,1,34,25,9,1
+224,2016,20,departamento de salud de pedro aguirre cerda,dmun,880,-0.123551435,NA,NA,NA,0,17,7,10,1
+225,2016,20,departamento de salud de quilicura,dmun,881,-0.039044393,NA,NA,NA,0,27,17,10,1
+226,2016,20,departamento de salud de recoleta,dmun,882,-0.241754323,39,20,19,1,46,15,31,1
+227,2016,20,departamento de salud de san ramon,dmun,884,-0.037083259,38,20,18,1,14,11,3,1
+228,2016,47,agencia de cooperacion internacional de chile  agci,daa area 3,1036,-0.031813773,4,3,1,1,11,7,5,1
+229,2016,48,casa de moneda de chile s a,daa area 4,1105,-0.466721222,10,7,3,1,18,12,6,1
+230,2016,45,comision nacional de investigacion cientifica y tecnologica  conicyt,daa area 1,1133,-0.242720383,17,14,4,1,14,6,7,1
+231,2016,30,comision nacional de riego  cnr,dir comite 1,1134,-0.576810825,49,49,0,1,3,0,3,1
+232,2016,49,comision nacional de riego  cnr,daa area 5,1134,-0.238687783,49,49,0,1,3,0,3,1
+233,2016,48,comite innova chile,daa area 4,1153,-0.507637752,NA,NA,NA,0,7,4,3,1
+234,2016,46,hospital doctor sotero del rio,daa area 2,1159,-0.222502806,13,12,2,1,20,5,15,1
+235,2016,48,consejo de defensa del estado,daa area 4,1160,-0.603109656,NA,NA,NA,0,4,0,4,1
+236,2016,10,consejo nacional de la cultura y las artes,uce v,1176,0.094169544,48,40,8,1,34,31,3,1
+237,2016,32,consejo nacional de la cultura y las artes,dir comite 3,1176,-0.250097542,48,40,8,1,34,31,3,1
+238,2016,32,corporacion de fomento de la produccion,dir comite 3,1239,-0.158798283,13,11,3,1,6,5,1,1
+239,2016,48,corporacion de fomento de la produccion,daa area 4,1239,-0.467539553,13,11,3,1,6,5,1,1
+240,2016,14,corporacion nacional de desarrollo indigena,uce ix,1254,0.128167282,NA,NA,NA,0,25,25,0,1
+241,2016,30,corporacion nacional forestal,dir comite 1,1268,0.121782966,NA,NA,NA,0,11,9,2,1
+242,2016,49,corporacion nacional forestal,daa area 5,1268,-0.142533937,NA,NA,NA,0,11,9,2,1
+243,2016,17,direccion regional conaf magallanes,uce xii,1279,-0.289351422,NA,NA,NA,0,24,19,5,1
+244,2016,50,defensoria penal publica,daa area 6,1342,-0.155176736,NA,NA,NA,0,27,20,7,1
+245,2016,9,direccion regional de arquitectura coquimbo,uce iv,1396,-0.77246696,NA,NA,NA,0,57,55,2,1
+246,2016,32,direccion de bibliotecas  archivos y museos  dibam,dir comite 3,1406,-0.169527897,NA,NA,NA,0,13,13,0,1
+247,2016,45,direccion de bibliotecas  archivos y museos  dibam,daa area 1,1406,-0.353211009,NA,NA,NA,0,13,13,0,1
+248,2016,9,direccion regional de obras hidraulicas coquimbo,uce iv,1446,-0.519823789,NA,NA,NA,0,64,54,10,1
+249,2016,48,direccion de presupuestos,daa area 4,1489,-0.312329514,NA,NA,NA,0,29,11,18,1
+250,2016,50,carabineros de chile   direccion de prevision  dipreca,daa area 6,1490,0.191526698,17,8,9,1,13,12,1,1
+251,2016,9,direccion regional de vialidad coquimbo,uce iv,1523,-0.224229075,NA,NA,NA,0,14,14,0,1
+252,2016,49,direccion del trabajo,daa area 5,1532,-0.156391403,NA,NA,NA,0,28,18,9,1
+253,2016,49,direccion general de credito prendario  dicrep,daa area 5,1576,-0.702771493,NA,NA,NA,0,15,4,11,1
+254,2016,50,subsecretaria de prevencion del delito,daa area 6,1615,-0.329907245,13,4,9,1,22,16,6,1
+255,2016,32,empresa de correos de chile,dir comite 3,1645,0,20,14,6,1,10,6,4,1
+256,2016,48,empresa de correos de chile,daa area 4,1645,-0.048827059,20,14,6,1,10,6,4,1
+257,2016,32,empresa concesionaria de servicios sanitarios s a,dir comite 3,1665,-0.268630511,NA,NA,NA,0,6,4,2,1
+258,2016,48,empresa concesionaria de servicios sanitarios s a,daa area 4,1665,-0.638025095,NA,NA,NA,0,6,4,2,1
+259,2016,32,empresa nacional de mineria,dir comite 3,1667,0.074131877,NA,NA,NA,0,15,8,7,1
+260,2016,48,empresa nacional de mineria,daa area 4,1667,-0.30141844,NA,NA,NA,0,15,8,7,1
+261,2016,32,empresa nacional del petroleo,dir comite 3,1673,-0.260632072,NA,NA,NA,0,11,10,2,1
+262,2016,48,empresa nacional del petroleo,daa area 4,1673,-0.277414075,NA,NA,NA,0,11,10,2,1
+263,2016,47,estado mayor conjunto,daa area 3,1696,-0.225024248,7,3,4,1,13,5,8,1
+264,2016,49,fondo de solidaridad e inversion social,daa area 5,1717,-0.209558824,15,12,3,1,15,10,5,1
+265,2016,8,direccion regional fosis atacama,uce iii,1721,-0.278642456,NA,NA,NA,0,3,3,0,1
+266,2016,9,direccion regional fosis coquimbo,uce iv,1724,-0.285903084,NA,NA,NA,0,5,3,2,1
+267,2016,15,direccion regional fosis los lagos,uce x,1726,-0.228078251,NA,NA,NA,0,24,19,5,1
+268,2016,49,servicio nacional de la discapacidad,daa area 5,1732,0.163178733,20,19,1,1,25,23,2,1
+269,2016,46,fondo nacional de salud,daa area 2,1747,0.257575758,21,12,8,1,18,18,0,1
+270,2016,32,gendarmeria de chile,dir comite 3,1773,0.27409286,23,18,5,1,16,11,4,1
+271,2016,50,gendarmeria de chile,daa area 6,1773,0.285785911,23,18,5,1,16,11,4,1
+272,2016,7,gobernacion de antofagasta,uce ii,1793,-0.320562771,NA,NA,NA,0,9,7,2,1
+273,2016,6,gobernacion de iquique,uce i,1817,-0.20766721,34,24,10,1,18,7,11,1
+274,2016,10,gobernacion de petorca,uce v,1832,-0.180667434,NA,NA,NA,0,10,7,3,1
+275,2016,7,gobierno regional antofagasta,uce ii,1844,-0.19025974,NA,NA,NA,0,22,15,7,1
+276,2016,24,gobierno regional arica y parinacota,uce xv,1846,-0.16999575,66,46,20,1,35,18,17,1
+277,2016,8,gobierno regional atacama,uce iii,1847,-0.079334198,48,18,30,1,8,4,4,1
+278,2016,16,gobierno regional aysen,uce xi,1848,-0.192422732,NA,NA,NA,0,18,11,7,1
+279,2016,9,gobierno regional coquimbo,uce iv,1850,-0.30154185,26,20,6,1,31,22,9,1
+280,2016,11,gobierno regional ohiggins,uce vi,1851,-0.178978389,NA,NA,NA,0,42,22,20,1
+281,2016,23,gobierno regional los rios,uce xiv,1853,-0.303448276,21,4,17,1,11,8,3,1
+282,2016,17,gobierno regional magallanes,uce xii,1854,-0.087158521,NA,NA,NA,0,7,5,2,1
+283,2016,12,gobierno regional maule,uce vii,1855,-0.381448957,NA,NA,NA,0,56,54,2,1
+284,2016,10,gobierno regional valparaiso,uce v,1858,-0.283467587,NA,NA,NA,0,27,20,7,1
+285,2016,46,complejo asistencial barros luco,daa area 2,1861,-0.226150393,34,18,16,1,19,12,6,1
+286,2016,15,hospital base san jose de osorno,uce x,1862,0.052243959,28,16,12,1,74,63,11,1
+287,2016,15,hospital de puerto montt,uce x,1863,-0.038895282,23,22,1,1,56,43,13,1
+288,2016,7,hospital doctor carlos cisternas,uce ii,1864,-0.165584416,NA,NA,NA,0,30,24,6,1
+289,2016,46,hospital de ninos doctor roberto del rio,daa area 2,1868,-0.271043771,NA,NA,NA,0,55,37,18,1
+290,2016,23,hospital clinico regional de valdivia,uce xiv,1869,-0.090206897,32,18,14,1,26,20,6,1
+291,2016,46,hospital san borja arriaran,daa area 2,1870,0.090909091,20,7,14,1,13,11,2,1
+292,2016,9,hospital doctor jose luis arrano de andacollo,uce iv,1874,-0.354405286,NA,NA,NA,0,12,8,4,1
+293,2016,9,hospital doctor jose luis arrano de andacollo,uce iv,1874,-0.354405286,NA,NA,NA,0,12,8,4,1
+294,2016,13,hospital de arauco,uce viii,1875,-0.201654602,NA,NA,NA,0,50,13,37,1
+295,2016,15,hospital de castro,uce x,1883,0.202301496,33,29,4,1,25,19,6,1
+296,2016,12,hospital de constitucion,uce vii,1894,-0.091931943,NA,NA,NA,0,42,32,10,1
+297,2016,9,hospital san pablo de coquimbo,uce iv,1896,-0.252422907,36,14,22,1,30,26,4,1
+298,2016,12,hospital san juan de dios de curico,uce vii,1902,-0.177277717,NA,NA,NA,0,62,46,16,1
+299,2016,12,hospital base linares,uce vii,1924,-0.239846323,NA,NA,NA,0,44,25,19,1
+300,2016,9,hospital san pedro de los vilos,uce iv,1931,-0.140969163,NA,NA,NA,0,18,12,6,1
+301,2016,9,hospital de salamanca,uce iv,1963,-0.141629956,NA,NA,NA,0,30,24,6,1
+302,2016,11,hospital san juan de dios de san fernando,uce vi,1966,-0.144007859,NA,NA,NA,0,35,21,14,1
+303,2016,12,hospital regional de talca,uce vii,1973,-0.22118551,37,29,8,1,40,32,8,1
+304,2016,46,hospital de urgencia asistencia publica,daa area 2,1978,0.033950617,14,11,2,1,20,13,8,1
+305,2016,14,hospital de victoria,uce ix,1979,-0.149815498,NA,NA,NA,0,64,33,31,1
+306,2016,46,hospital del salvador,daa area 2,1983,-0.259539843,31,7,24,1,21,14,7,1
+307,2016,46,hospital clinico doctor felix bulnes cerda,daa area 2,1991,0.064534231,NA,NA,NA,0,40,28,12,1
+308,2016,24,hospital regional de arica dr  juan noe,uce xv,1992,0.034424139,39,0,39,1,57,35,22,1
+309,2016,17,hospital clinico magallanes,uce xii,1993,0.226537818,17,16,1,1,32,27,5,1
+310,2016,14,hospital doctor hernan henriquez aravena,uce ix,1996,0,26,7,19,1,59,37,22,1
+311,2016,13,complejo asistencial doctor victor rios ruiz   los angeles,uce viii,1998,-0.261892451,NA,NA,NA,0,34,24,10,1
+312,2016,46,hospital el pino,daa area 2,2000,-0.167789001,NA,NA,NA,0,26,22,4,1
+313,2016,13,hospital clinico regional dr  guillermo grant benavente,uce viii,2003,-0.244829369,30,1,29,1,25,16,9,1
+314,2016,13,hospital las higueras,uce viii,2008,-0.111685626,NA,NA,NA,0,21,13,8,1
+315,2016,7,hospital regional doctor leonardo guzman,uce ii,2009,0.128787879,32,10,22,1,49,37,12,1
+316,2016,46,hospital doctor luis tisne,daa area 2,2010,-0.22979798,18,14,4,1,9,5,4,1
+317,2016,16,hospital regional de coyhaique,uce xi,2022,0.025922233,30,30,0,1,51,38,13,1
+318,2016,8,hospital san jose del carmen de copiapo,uce iii,2025,0.195633377,22,8,14,1,43,26,17,1
+319,2016,46,complejo hospitalario san jose,daa area 2,2032,0.186026936,26,14,12,1,39,35,4,1
+320,2016,46,hospital san juan de dios,daa area 2,2035,-0.312289562,23,8,15,1,24,16,8,1
+321,2016,10,hospital san martin de quillota,uce v,2039,-0.112197929,NA,NA,NA,0,34,29,5,1
+322,2016,30,instituto de desarrollo agropecuario,dir comite 1,2048,-0.147519236,NA,NA,NA,0,28,26,2,1
+323,2016,49,instituto de desarrollo agropecuario,daa area 5,2048,-0.533653846,NA,NA,NA,0,28,26,2,1
+324,2016,14,direccion regional indap la araucania,uce ix,2050,0.035178352,NA,NA,NA,0,20,17,3,1
+325,2016,16,direccion regional indap aysen,uce xi,2053,-0.17666999,NA,NA,NA,0,17,12,5,1
+326,2016,15,direccion regional indap los lagos,uce x,2057,-0.142462601,NA,NA,NA,0,21,9,12,1
+327,2016,12,direccion regional indap maule,uce vii,2060,-0.279088913,36,26,10,1,24,17,7,1
+328,2016,49,instituto de prevision social,daa area 5,2084,0.297228507,27,13,14,1,13,11,2,1
+329,2016,32,instituto nacional de deportes nivel central,dir comite 3,2104,-0.196644557,22,12,10,1,10,9,2,1
+330,2016,50,instituto nacional de deportes nivel central,daa area 6,2104,-0.263975934,22,12,10,1,10,9,2,1
+331,2016,23,direccion regional ind los rios,uce xiv,2114,-0.334068966,27,19,8,1,20,15,5,1
+332,2016,8,intendencia atacama,uce iii,2160,-0.631647211,NA,NA,NA,0,27,27,0,1
+333,2016,16,intendencia aysen,uce xi,2161,-0.368095713,NA,NA,NA,0,64,55,9,1
+334,2016,9,intendencia coquimbo,uce iv,2162,-0.002863436,29,21,8,1,25,24,1,1
+335,2016,15,intendencia los lagos,uce x,2165,-0.575143843,18,8,10,1,19,16,3,1
+336,2016,17,intendencia magallanes,uce xii,2167,-0.062813603,NA,NA,NA,0,12,10,2,1
+337,2016,13,intendencia bio bio,uce viii,2170,-0.372285419,NA,NA,NA,0,17,3,14,1
+338,2016,32,junta nacional de auxilio escolar y becas,dir comite 3,2179,0.140655482,34,30,3,1,13,8,5,1
+339,2016,45,junta nacional de auxilio escolar y becas,daa area 1,2179,0.266653371,34,30,3,1,13,8,5,1
+340,2016,32,junta nacional de jardines infantiles,dir comite 3,2194,-0.27058135,19,10,9,1,14,10,4,1
+341,2016,45,junta nacional de jardines infantiles,daa area 1,2194,0,19,10,9,1,14,10,4,1
+342,2016,23,direccion regional junji los rios,uce xiv,2204,-0.509517241,41,40,1,1,24,23,1,1
+343,2016,32,metro s a,dir comite 3,2451,-0.166796723,4,4,0,1,9,2,7,1
+344,2016,48,metro s a,daa area 4,2451,-0.099018003,4,4,0,1,9,2,7,1
+345,2016,32,oficina nacional de emergencias,dir comite 3,2463,-0.165040968,NA,NA,NA,0,22,18,4,1
+346,2016,50,oficina nacional de emergencias,daa area 6,2463,-0.590624217,NA,NA,NA,0,22,18,4,1
+347,2016,48,polla s a,daa area 4,2493,-0.312329514,NA,NA,NA,0,8,6,2,1
+348,2016,50,presidencia de la republica,daa area 6,2495,-0.080721985,NA,NA,NA,0,26,11,15,1
+349,2016,50,subsecretaria general de gobierno,daa area 6,2569,-0.683128604,NA,NA,NA,0,24,19,5,1
+350,2016,7,secretaria regional ministerial de bienes nacionales de antofagasta,uce ii,2586,-0.350865801,NA,NA,NA,0,26,14,12,1
+351,2016,7,secretaria regional ministerial de educacion antofagasta,uce ii,2615,0.118614719,NA,NA,NA,0,10,5,5,1
+352,2016,14,secretaria regional ministerial de educacion la araucania,uce ix,2616,0.244772448,5,3,2,1,16,14,2,1
+353,2016,24,secretaria regional ministerial de educacion arica y parinacota,uce xv,2617,0.022524437,NA,NA,NA,0,34,30,4,1
+354,2016,8,secretaria regional ministerial de educacion atacama,uce iii,2618,0.223951578,NA,NA,NA,0,7,5,2,1
+355,2016,16,secretaria regional ministerial de educacion aysen,uce xi,2619,0.13559322,NA,NA,NA,0,23,15,8,1
+356,2016,13,secretaria regional ministerial de educacion bio bio,uce viii,2620,0.043950362,NA,NA,NA,0,41,38,3,1
+357,2016,9,secretaria regional ministerial de educacion coquimbo,uce iv,2621,-0.136784141,NA,NA,NA,0,9,4,5,1
+358,2016,11,secretaria regional ministerial de educacion o higgins,uce vi,2622,-0.249312377,NA,NA,NA,0,16,13,3,1
+359,2016,15,secretaria regional ministerial de educacion los lagos,uce x,2623,-0.040506329,NA,NA,NA,0,26,20,6,1
+360,2016,23,secretaria regional ministerial de educacion los rios,uce xiv,2624,0.167448276,NA,NA,NA,0,29,24,5,1
+361,2016,12,secretaria regional ministerial de educacion maule,uce vii,2626,0.161635565,NA,NA,NA,0,16,14,2,1
+362,2016,6,secretaria regional ministerial de educacion tarapaca,uce i,2628,0.081239804,NA,NA,NA,0,19,13,6,1
+363,2016,30,servicio agricola y ganadero,dir comite 1,2845,-0.157336163,11,6,5,1,16,14,2,1
+364,2016,49,servicio agricola y ganadero,daa area 5,2845,-0.592760181,11,6,5,1,16,14,2,1
+365,2016,16,direccion regional sag aysen,uce xi,2850,0.048055833,NA,NA,NA,0,14,11,3,1
+366,2016,15,direccion regional sag los lagos,uce x,2854,0.076409666,NA,NA,NA,0,12,5,7,1
+367,2016,32,servicio de registro civil e identificacion,dir comite 3,2891,-0.093055014,10,4,6,1,18,18,0,1
+368,2016,50,servicio de registro civil e identificacion,daa area 6,2891,-0.429681624,10,4,6,1,18,18,0,1
+369,2016,7,servicio de salud antofagasta,uce ii,2907,0,25,8,17,1,22,16,6,1
+370,2016,24,servicio de salud arica,uce xv,2911,-0.326179346,NA,NA,NA,0,23,17,6,1
+371,2016,8,servicio de salud atacama,uce iii,2912,-0.115434501,NA,NA,NA,0,22,16,6,1
+372,2016,16,servicio de salud aysen,uce xi,2913,0.017946162,51,46,5,1,56,49,7,1
+373,2016,13,servicio de salud concepcion,uce viii,2915,-0.13081696,36,26,10,1,14,9,5,1
+374,2016,9,servicio de salud coquimbo,uce iv,2916,-0.291189427,53,49,4,1,33,25,8,1
+375,2016,6,servicio de salud iquique,uce i,2917,-0.216476346,37,23,14,1,73,30,43,1
+376,2016,17,servicio de salud magallanes,uce xii,2919,-0.007805241,19,14,5,1,6,6,0,1
+377,2016,12,servicio de salud maule,uce vii,2920,-0.055433589,NA,NA,NA,0,29,24,4,1
+378,2016,30,servicio de salud metropolitano central,dir comite 1,2921,0.091801539,11,8,3,1,18,13,5,1
+379,2016,46,servicio de salud metropolitano central,daa area 2,2921,-0.141975309,11,8,3,1,18,13,5,1
+380,2016,30,servicio de salud metropolitano norte,dir comite 1,2922,-0.18492969,8,6,2,1,25,21,4,1
+381,2016,46,servicio de salud metropolitano norte,daa area 2,2922,0.10016835,8,6,2,1,25,21,4,1
+382,2016,30,servicio de salud metropolitano occidente,dir comite 1,2923,-0.304590077,13,10,3,1,5,4,1,1
+383,2016,46,servicio de salud metropolitano occidente,daa area 2,2923,-0.336700337,13,10,3,1,5,4,1,1
+384,2016,30,servicio de salud metropolitano oriente,dir comite 1,2924,-0.433271425,11,7,4,1,14,11,3,1
+385,2016,46,servicio de salud metropolitano oriente,daa area 2,2924,-0.08305275,11,7,4,1,14,11,3,1
+386,2016,30,servicio de salud metropolitano sur oriente,dir comite 1,2926,0.187317591,NA,NA,NA,0,16,11,5,1
+387,2016,46,servicio de salud metropolitano sur oriente,daa area 2,2926,-0.092592593,NA,NA,NA,0,16,11,5,1
+388,2016,11,servicio de salud o higgins,uce vi,2928,0.050884086,34,23,12,1,19,11,8,1
+389,2016,13,servicio de salud talcahuano,uce viii,2930,-0.011892451,NA,NA,NA,0,26,23,3,1
+390,2016,23,servicio de salud valdivia,uce xiv,2931,-0.039172414,29,21,8,1,25,10,16,1
+391,2016,10,servicio de salud valparaiso   san antonio,uce v,2932,-0.209627925,37,30,7,1,18,10,8,1
+392,2016,10,servicio de salud vina del mar   quillota,uce v,2933,-0.182201764,NA,NA,NA,0,13,7,6,1
+393,2016,7,servicio de vivienda y urbanizacion antofagasta,uce ii,2934,0.122294372,NA,NA,NA,0,35,27,8,1
+394,2016,24,servicio de vivienda y urbanizacion arica y parinacota,uce xv,2936,-0.145133872,32,18,14,1,13,12,1,1
+395,2016,8,servicio de vivienda y urbanizacion atacama,uce iii,2937,-0.194984868,NA,NA,NA,0,35,19,16,1
+396,2016,16,servicio de vivienda y urbanizacion aysen,uce xi,2938,-0.153539382,52,31,21,1,40,30,10,1
+397,2016,13,servicio de vivienda y urbanizacion bio bio,uce viii,2939,0.252068252,NA,NA,NA,0,31,15,16,1
+398,2016,11,servicio de vivienda y urbanizacion o higgins,uce vi,2941,0.219056974,NA,NA,NA,0,47,29,18,1
+399,2016,15,servicio de vivienda y urbanizacion los lagos,uce x,2942,-0.479401611,NA,NA,NA,0,26,6,20,1
+400,2016,23,servicio de vivienda y urbanizacion los rios,uce xiv,2943,-0.190896552,43,6,37,1,11,6,5,1
+401,2016,17,servicio de vivienda y urbanizacion magallanes,uce xii,2944,-0.090317785,NA,NA,NA,0,32,28,4,1
+402,2016,6,servicio de vivienda y urbanizacion tarapaca,uce i,2947,-0.244045677,NA,NA,NA,0,12,9,4,1
+403,2016,10,servicio de vivienda y urbanizacion valparaiso,uce v,2948,-0.197928654,NA,NA,NA,0,21,0,21,1
+404,2016,50,servicio medico legal,daa area 6,2965,-0.67635999,NA,NA,NA,0,30,19,12,1
+405,2016,10,servicio nacional de aduanas,uce v,2980,-0.550632911,24,19,5,1,10,9,2,1
+406,2016,32,servicio nacional de aduanas,dir comite 3,2980,-0.179282091,24,19,5,1,10,9,2,1
+407,2016,16,direccion regional aduanas aysen,uce xi,2987,-0.27337986,NA,NA,NA,0,23,13,10,1
+408,2016,17,direccion regional aduanas magallanes,uce xii,2992,-0.208883107,NA,NA,NA,0,12,11,1,1
+409,2016,6,direccion regional aduanas tarapaca,uce i,2995,-0.07862969,NA,NA,NA,0,29,4,25,1
+410,2016,49,servicio nacional de capacitacion y empleo,daa area 5,2997,-0.133484163,21,13,7,1,11,10,1,1
+411,2016,32,servicio nacional de geologia y mineria,dir comite 3,3012,-0.087982833,NA,NA,NA,0,16,14,2,1
+412,2016,48,servicio nacional de geologia y mineria,daa area 4,3012,-0.229405346,NA,NA,NA,0,16,14,2,1
+413,2016,49,servicio nacional de la mujer y equidad de genero,daa area 5,3025,-0.484162896,12,7,5,1,22,19,3,1
+414,2016,32,servicio nacional de menores,dir comite 3,3040,-0.488294967,13,8,5,1,20,10,10,1
+415,2016,50,servicio nacional de menores,daa area 6,3040,0.292805214,13,8,5,1,20,10,10,1
+416,2016,7,direccion regional sename antofagasta,uce ii,3041,-0.362770563,NA,NA,NA,0,29,14,15,1
+417,2016,16,direccion regional sename aysen,uce xi,3045,0.063010967,NA,NA,NA,0,47,47,0,1
+418,2016,17,direccion regional sename magallanes,uce xii,3051,-0.038468686,NA,NA,NA,0,18,11,7,1
+419,2016,10,servicio nacional de pesca y acuicultura,uce v,3055,-0.595895666,23,16,7,1,7,6,1,1
+420,2016,6,direccion regional sernapesca tarapaca,uce i,3069,-0.199021207,NA,NA,NA,0,10,0,10,1
+421,2016,48,servicio nacional de turismo,daa area 4,3071,-0.285870158,NA,NA,NA,0,15,15,0,1
+422,2016,30,servicio nacional del adulto mayor,dir comite 1,3086,0.220217564,35,34,1,1,43,39,4,1
+423,2016,49,servicio nacional del adulto mayor,daa area 5,3086,-0.528280543,35,34,1,1,43,39,4,1
+424,2016,10,sasipa spa,uce v,3128,-0.30111239,NA,NA,NA,0,24,24,1,1
+425,2016,49,subsecretaria de agricultura,daa area 5,3138,-0.46408371,NA,NA,NA,0,3,3,0,1
+426,2016,32,subsecretaria de bienes nacionales,dir comite 3,3140,-0.248536871,35,6,29,1,22,21,1,1
+427,2016,50,subsecretaria de bienes nacionales,daa area 6,3140,-0.645775884,35,6,29,1,22,21,1,1
+428,2016,32,subsecretaria de desarrollo regional y administrativo  subdere,dir comite 3,3142,-0.077643387,16,6,10,1,6,5,1,1
+429,2016,50,subsecretaria de desarrollo regional y administrativo  subdere,daa area 6,3142,0.163198797,16,6,10,1,6,5,1,1
+430,2016,32,subsecretaria de educacion,dir comite 3,3144,0.126609442,15,10,5,1,18,15,3,1
+431,2016,45,subsecretaria de educacion,daa area 1,3144,0.261268448,15,10,5,1,18,15,3,1
+432,2016,32,subsecretaria de hacienda,dir comite 3,3146,-0.253804136,10,6,4,1,11,6,6,1
+433,2016,48,subsecretaria de hacienda,daa area 4,3146,-0.118930715,10,6,4,1,11,6,6,1
+434,2016,32,subsecretaria de justicia,dir comite 3,3148,-0.260827156,NA,NA,NA,0,11,6,5,1
+435,2016,50,subsecretaria de justicia,daa area 6,3148,-0.486337428,NA,NA,NA,0,11,6,5,1
+436,2016,10,subsecretaria de pesca y acuicultura,uce v,3152,-0.245301112,13,12,0,1,50,44,6,1
+437,2016,30,subsecretaria de redes asistenciales,dir comite 1,3155,0.138763598,NA,NA,NA,0,17,15,2,1
+438,2016,46,subsecretaria de redes asistenciales,daa area 2,3155,-0.1164422,NA,NA,NA,0,17,15,2,1
+439,2016,30,subsecretaria de salud publica,dir comite 1,3157,0.151764394,37,32,5,1,30,20,10,1
+440,2016,46,subsecretaria de salud publica,daa area 2,3157,-0.494388328,37,32,5,1,30,20,10,1
+441,2016,32,subsecretaria de telecomunicaciones,dir comite 3,3158,-0.306476785,NA,NA,NA,0,9,3,6,1
+442,2016,48,subsecretaria de telecomunicaciones,daa area 4,3158,-0.18030551,NA,NA,NA,0,9,3,6,1
+443,2016,32,subsecretaria de transportes,dir comite 3,3159,-0.404408896,9,5,4,1,10,6,4,1
+444,2016,48,subsecretaria de transportes,daa area 4,3159,-0.003546099,9,5,4,1,10,6,4,1
+445,2016,49,subsecretaria del trabajo,daa area 5,3162,-0.156108597,13,2,11,1,22,19,3,1
+446,2016,17,tesoreria regional magallanes,uce xii,3241,-0.118565322,NA,NA,NA,0,4,3,1,1
+447,2016,6,universidad arturo prat  iquique,uce i,3312,0.067536705,NA,NA,NA,0,13,9,4,1
+448,2016,7,universidad de antofagasta,uce ii,3326,-0.207575758,13,6,7,1,10,7,3,1
+449,2016,8,universidad de atacama,uce iii,3327,-0.256809339,22,16,6,1,20,8,12,1
+450,2016,45,universidad de chile,daa area 1,3328,0.104706821,28,27,1,1,13,12,1,1
+451,2016,14,universidad de la frontera,uce ix,3344,-0.0600246,9,1,8,1,7,4,3,1
+452,2016,15,universidad de los lagos,uce x,3350,-0.15420023,13,12,1,1,5,5,0,1
+453,2016,17,universidad de magallanes,uce xii,3371,0.155361457,18,16,2,1,12,12,0,1
+454,2016,32,universidad de santiago de chile,dir comite 3,3389,-0.024970737,27,25,2,1,10,9,1,1
+455,2016,45,universidad de santiago de chile,daa area 1,3389,0.134024731,27,25,2,1,10,9,1,1
+456,2016,12,universidad de talca,uce vii,3390,-0.175631175,8,5,3,1,11,10,1,1
+457,2016,24,universidad de tarapaca  arica,uce xv,3391,-0.147683808,NA,NA,NA,0,16,10,6,1
+458,2016,10,universidad de valparaiso,uce v,3407,-0.32278481,NA,NA,NA,0,7,5,2,1
+459,2016,13,universidad del bio bio,uce viii,3431,0.028955533,10,9,1,1,10,5,4,1
+460,2016,32,universidad metropolitana de ciencias de la educacion,dir comite 3,3434,0.145142411,NA,NA,NA,0,23,22,1,1
+461,2016,45,universidad metropolitana de ciencias de la educacion,daa area 1,3434,-0.219585162,NA,NA,NA,0,23,22,1,1
+462,2016,32,universidad tecnologica metropolitana,dir comite 3,3435,0.169137729,NA,NA,NA,0,16,11,5,1
+463,2016,45,universidad tecnologica metropolitana,daa area 1,3435,-0.122257679,NA,NA,NA,0,16,11,5,1
+464,2016,6,zofri s a   tarapaca,uce i,3455,-0.047145188,NA,NA,NA,0,13,4,9,1
+465,2016,49,subsecretaria de servicios sociales,daa area 5,3928,0.134332579,NA,NA,NA,0,36,5,31,1
+466,2016,32,subsecretaria del interior,dir comite 3,4094,0.100858369,NA,NA,NA,0,20,16,4,1
+467,2016,50,subsecretaria del interior,daa area 6,4094,-0.129105039,NA,NA,NA,0,20,16,4,1
+468,2016,50,servicio nacional para la prevencion y rehabilitacion consumo de drogas y alcohol  senda,daa area 6,4100,-0.1702181,NA,NA,NA,0,23,17,6,1
+469,2016,45,superintendencia de educacion escolar,daa area 1,4388,-0.315715995,23,3,20,1,18,13,5,1
+470,2016,46,hospital clinico metropolitano la florida dra eloisa diaz insunza,daa area 2,4404,-0.271604938,NA,NA,NA,0,32,24,8,1
+471,2016,46,hospital el carmen dr  luis valentin ferrada,daa area 2,4405,-0.104657688,NA,NA,NA,0,17,13,4,1
