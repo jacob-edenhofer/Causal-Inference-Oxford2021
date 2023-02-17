@@ -637,12 +637,20 @@ did_robust_interaction <- lm_robust(deaths ~ postperiod*treated,
                             cluster = id)
 # table 
 modelsummary(did_robust_interaction, 
-             output = "kableExtra", 
+             output = "markdown",
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
 
-The coefficient estimate for the `intercept` indicates the expected or average cholera deaths for control sub-districts in the pre-treatment period (1849), which corresponds to `precontrol` from above. Furthermore, the coefficient estimate for `treated` represents the expected difference in cholera deaths for treated sub-districts, relative to control ones, in the pre-treatment period (1849). This corresponds to `pretreat`-`precontrol` from above. The coefficient estimate for `postperiod` represents the expected difference in cholera deaths for the post-treatment (1854), relative to the pre-treatment (1849), period for control sub-districts. This corresponds to `postcontrol`-`precontrol` from above. Finally, the coefficient estimate for `postperiod*treated` corresponds to `manual_did` from above and, thus, gives us the DiD estimate.^[Let me provide the mathematical derivations for my interpretation of the R output. Let us write the estimating equation as $Deaths_{i}=\alpha + \beta_{1}Treated_{i}+\beta_{2}PostPeriod_{i}+\beta_{3}Treated_{i}*PostPeriod_{i} + \epsilon_{i}$, where $i$ indexes sub-districts. The coefficient estimates can be written as conditional expectations: $\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0)$, $\beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha$, $\beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha$, and $\beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1)-E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}$.] The latter is approximately -94.42 and is statistically significant at all conventional significance levels.^[By conventional significance levels, I mean the 1%, 5% and 10% significance levels.] The interpretation is identical to the one provided for `manual_did`.
+The coefficient estimate for the `intercept` indicates the expected or average cholera deaths for control sub-districts in the pre-treatment period (1849), which corresponds to `precontrol` from above. Furthermore, the coefficient estimate for `treated` represents the expected difference in cholera deaths for treated sub-districts, relative to control ones, in the pre-treatment period (1849). This corresponds to `pretreat`-`precontrol` from above. The coefficient estimate for `postperiod` represents the expected difference in cholera deaths for the post-treatment (1854), relative to the pre-treatment (1849), period for control sub-districts. This corresponds to `postcontrol`-`precontrol` from above. The coefficient estimate for `postperiod*treated` corresponds to `manual_did` from above and, thus, gives us the DiD estimate. The latter is approximately -94.42 and is statistically significant at all conventional significance levels.^[By conventional significance levels, I mean the 1%, 5% and 10% significance levels.] The interpretation is identical to the one provided for `manual_did`.
+
+Finally, let me provide the mathematical derivations for my interpretation of the R output. Let us write the estimating equation as $Deaths_{i}=\alpha + \beta_{1}Treated_{i}+\beta_{2}PostPeriod_{i}+\beta_{3}Treated_{i}*PostPeriod_{i} + \epsilon_{i}$, where $i$ indexes sub-districts. The coefficient estimates can be written as conditional expectations: 
+
+$$
+\begin{aligned}
+\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0) \\ \beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha \\ \beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha \\ \beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1)-E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}
+\end{aligned}
+$$
 
 ## DID and FE in the context of @fowler2013electoral
 
@@ -974,7 +982,18 @@ rdd_models <- list("Model 1" = lm(dv_c_t2 ~ dv_c_t1 + treated_broock + dv_c_t1*t
                   + dv_c_t1*treated_broock + I(dv_c_t1^2)*treated_broock
                   + I(dv_c_t1^3)*treated_broock, 
                   data = broockman_pruned))
-modelsummary(rdd_models, output = "kableExtra", 
+modelsummary(rdd_models, 
+             coef_map = setNames(c("Intercept", 
+                                   "Dem. vote share (previous election)", 
+                                   "Treatment dummy",
+                                   "Dem. vote share x Treatment",
+                                   "Dem. vote share squared",
+                                   "Dem. vote share cubed",
+                                   "Dem. vote share squared x Treatment", 
+                                   "Dem. vote share cubed x Treatment"), 
+                                 c("(Intercept)", "dv_c_t1", "treated_broock", "dv_c_t1*treated_broock",
+                                   "I(dv_c_t1^2)", "I(dv_c_t1^3)", "I(dv_c_t1^2):treated_broock", "I(dv_c_t1^3):treated_broock")),
+             output = "kableExtra", 
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
@@ -1119,14 +1138,14 @@ As we can see, this is manifestly not the case. Instead, there is two-sided non-
 
 To get a better sense of the relationship between assignment to treatment and actual treatment, I create a table via the following piece of code: 
 
-```{r treatment-table, results='asis'}
+```{r treatment-table}
 audit %>%
   mutate(audit.2016 = as.character(audit.2016)) %>%
   dplyr::group_by(audit.2016, norm.value<=0) %>%
   dplyr::summarise(count = n()) %>%
   group_by(audit.2016) %>%
   mutate(prop = count/sum(count)) %>%
-  kable(col.names = c("Audit 2016", "Norm Value <= 0", "Count", "Proportion")) %>%
+  kable(col.names = c("Audit 2016", "Norm Value less than or equal to 0", "Count", "Proportion")) %>%
   kable_styling(bootstrap_options = "striped") 
 ```
 
@@ -1202,7 +1221,7 @@ In table 4, FM exclude the two departments^[More precisely, table 4 is split int
 FM's final robustness check is reported in table 5. Rather than excluding Saone-et-Loire and Cher altogether, they exclude all communes within 5km of the LOD. This is because, as noted above, KM claim that, along the East-West path, 'the LOD ran just to the South of the railway, normally within five kilometers' [@kocher2015s, p. 6]. Just as in tables 1,2 and 4, FM report the differences in the NMS between the Vichy and German zones for the 5km, 10km, 15km and 20km bandwidths. Again, FM find that German communes experienced significantly more railway sabotage than their Vichy counterparts, even when removing all communes that lie within 5km of the LOD [@ferwerda2015rail, p. 15-16]. FM interpret this as evidence that their results are *not* driven by the differential presence of strategic railways, but by differing levels of native governing authority. 
 
 
-In light of this debate, what, if any, lessons can we draw for conducting historical research by employing border regression discontinuity designs. The general utility of these designs is that they allow for a systematic, as opposed to a selective, discussion of the historical evidence for and against FM's hypothesis. This is because, like all quasi-experimental or design-based empirical methods [@samii2016causal], the RDD makes transparent the source of identifying variation upon which it relies to estimate the local average treatment effect (LATE). 
+In light of this debate, what, if any, lessons can we draw for conducting historical research by employing border regression discontinuity designs? The general utility of these designs is that they allow for a systematic, as opposed to a selective, discussion of the historical evidence for and against FM's hypothesis. This is because, like all quasi-experimental or design-based empirical methods [@samii2016causal], the RDD makes transparent the source of identifying variation upon which it relies to estimate the local average treatment effect (LATE). 
 
 Here, the source of identifying variation is provided by the border discontinuity induced by the LOD. As discussed, for the LATE to be identified the continuity assumption must hold. This implies that historical evidence is then used to either justify or criticise that assumption, as the debate between KM and FM bears out. By making transparent the assumptions required for drawing causal inferences, the RDD makes it more difficult for researchers to selectively use historical evidence to justify their priors regarding the effect of native governing authority on insurgent activity. Hence, the RDD allows us here to use the available historical evidence in systematic fashion. Finally, justifying the continuity assumption requires, as we saw, substantial historical or qualitative knowledge. It is in this sense that the RDD allows us here to bring to bear both qualitative and quantitative knowledge on a substantively important social-science question, namely whether or not native governing authority reduces insurgency. 
 

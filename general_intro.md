@@ -2118,115 +2118,24 @@ did_robust_interaction <- lm_robust(deaths ~ postperiod*treated,
                             cluster = id)
 # table 
 modelsummary(did_robust_interaction, 
-             output = "kableExtra", 
+             output = "markdown",
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:center;">
- (1)
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:center;">
-188.417
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:center;">
-(28.222)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-postperiod
-</td>
-<td style="text-align:center;">
-16.417
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:center;">
-(16.576)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-treated
-</td>
-<td style="text-align:center;">
-25.583
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:center;">
-(41.679)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-postperiod × treated
-</td>
-<td style="text-align:center;">
-−94.417
-</td>
-</tr>
-<tr>
-<td style="text-align:left;box-shadow: 0px 1px">
-</td>
-<td style="text-align:center;box-shadow: 0px 1px">
-(28.473)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Num.Obs.
-</td>
-<td style="text-align:center;">
-62
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-R2
-</td>
-<td style="text-align:center;">
-0.081
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-RMSE
-</td>
-<td style="text-align:center;">
-109.85
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Std.Errors
-</td>
-<td style="text-align:center;">
-by: id
-</td>
-</tr>
-</tbody>
-</table>
+|                      |  \(1\)   |
+|:---------------------|:--------:|
+| (Intercept)          | 188.417  |
+|                      | (28.222) |
+| postperiod           |  16.417  |
+|                      | (16.576) |
+| treated              |  25.583  |
+|                      | (41.679) |
+| postperiod × treated | -94.417  |
+|                      | (28.473) |
+| Num.Obs.             |    62    |
+| R2                   |  0.081   |
+| RMSE                 |  109.85  |
+| Std.Errors           |  by: id  |
 
 The coefficient estimate for the `intercept` indicates the expected or
 average cholera deaths for control sub-districts in the pre-treatment
@@ -2238,12 +2147,23 @@ corresponds to `pretreat`-`precontrol` from above. The coefficient
 estimate for `postperiod` represents the expected difference in cholera
 deaths for the post-treatment (1854), relative to the pre-treatment
 (1849), period for control sub-districts. This corresponds to
-`postcontrol`-`precontrol` from above. Finally, the coefficient estimate
-for `postperiod*treated` corresponds to `manual_did` from above and,
-thus, gives us the DiD estimate.[^20] The latter is approximately -94.42
-and is statistically significant at all conventional significance
-levels.[^21] The interpretation is identical to the one provided for
-`manual_did`.
+`postcontrol`-`precontrol` from above. The coefficient estimate for
+`postperiod*treated` corresponds to `manual_did` from above and, thus,
+gives us the DiD estimate. The latter is approximately -94.42 and is
+statistically significant at all conventional significance levels.[^20]
+The interpretation is identical to the one provided for `manual_did`.
+
+Finally, let me provide the mathematical derivations for my
+interpretation of the R output. Let us write the estimating equation as
+$Deaths_{i}=\alpha + \beta_{1}Treated_{i}+\beta_{2}PostPeriod_{i}+\beta_{3}Treated_{i}*PostPeriod_{i} + \epsilon_{i}$,
+where $i$ indexes sub-districts. The coefficient estimates can be
+written as conditional expectations:
+
+$$
+\begin{aligned}
+\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0) \\ \beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha \\ \beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha \\ \beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1)-E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}
+\end{aligned}
+$$
 
 ## DID and FE in the context of Fowler ([2013](#ref-fowler2013electoral))
 
@@ -2336,7 +2256,7 @@ reg6_robust_se <- sqrt(diag(cluster.vcov(reg6,
                             cluster = fowler_assembly$state)))
 ```
 
-Next, I summarise the above results in a regression table[^22], which
+Next, I summarise the above results in a regression table[^21], which
 replicates table 2 in Fowler and is created by the following piece of
 code:
 
@@ -2589,7 +2509,7 @@ To explain how tables 2 and 3 help us examine the parallel trends
 assumption, let me, first, explain this assumption in the context of
 Fowler’s paper. The parallel trends assumption requires that the change
 in the dependent variable of interest - turnout, Labor vote and seat
-shares - for control states[^23] from the pre- to the post-treatment
+shares - for control states[^22] from the pre- to the post-treatment
 periods (before and after the adoption of compulsory voting) is
 identical to the change in the dependent variable that would have
 materialised in those states that adopted compulsory voting at a certain
@@ -2916,7 +2836,18 @@ rdd_models <- list("Model 1" = lm(dv_c_t2 ~ dv_c_t1 + treated_broock + dv_c_t1*t
                   + dv_c_t1*treated_broock + I(dv_c_t1^2)*treated_broock
                   + I(dv_c_t1^3)*treated_broock, 
                   data = broockman_pruned))
-modelsummary(rdd_models, output = "kableExtra", 
+modelsummary(rdd_models, 
+             coef_map = setNames(c("Intercept", 
+                                   "Dem. vote share (previous election)", 
+                                   "Treatment dummy",
+                                   "Dem. vote share x Treatment",
+                                   "Dem. vote share squared",
+                                   "Dem. vote share cubed",
+                                   "Dem. vote share squared x Treatment", 
+                                   "Dem. vote share cubed x Treatment"), 
+                                 c("(Intercept)", "dv_c_t1", "treated_broock", "dv_c_t1*treated_broock",
+                                   "I(dv_c_t1^2)", "I(dv_c_t1^3)", "I(dv_c_t1^2):treated_broock", "I(dv_c_t1^3):treated_broock")),
+             output = "kableExtra", 
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
@@ -2936,7 +2867,7 @@ Model 1
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+Intercept
 </td>
 <td style="text-align:center;">
 −0.061
@@ -2957,7 +2888,7 @@ Model 1
 </tr>
 <tr>
 <td style="text-align:left;">
-dv_c\_t1
+Dem. vote share (previous election)
 </td>
 <td style="text-align:center;">
 0.438
@@ -2978,7 +2909,7 @@ dv_c\_t1
 </tr>
 <tr>
 <td style="text-align:left;">
-treated_broock
+Treatment dummy
 </td>
 <td style="text-align:center;">
 0.097
@@ -2999,28 +2930,7 @@ treated_broock
 </tr>
 <tr>
 <td style="text-align:left;">
-dv_c\_t1 × treated_broock
-</td>
-<td style="text-align:center;">
-1.018
-</td>
-<td style="text-align:center;">
-−6.144
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:center;">
-(0.357)
-</td>
-<td style="text-align:center;">
-(3.658)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-I(dv_c\_t1^2)
+Dem. vote share squared
 </td>
 <td style="text-align:center;">
 </td>
@@ -3039,7 +2949,7 @@ I(dv_c\_t1^2)
 </tr>
 <tr>
 <td style="text-align:left;">
-I(dv_c\_t1^3)
+Dem. vote share cubed
 </td>
 <td style="text-align:center;">
 </td>
@@ -3058,7 +2968,7 @@ I(dv_c\_t1^3)
 </tr>
 <tr>
 <td style="text-align:left;">
-I(dv_c\_t1^2) × treated_broock
+Dem. vote share squared x Treatment
 </td>
 <td style="text-align:center;">
 </td>
@@ -3077,7 +2987,7 @@ I(dv_c\_t1^2) × treated_broock
 </tr>
 <tr>
 <td style="text-align:left;">
-I(dv_c\_t1^3) × treated_broock
+Dem. vote share cubed x Treatment
 </td>
 <td style="text-align:center;">
 </td>
@@ -3484,7 +3394,7 @@ audit %>%
   dplyr::summarise(count = n()) %>%
   group_by(audit.2016) %>%
   mutate(prop = count/sum(count)) %>%
-  kable(col.names = c("Audit 2016", "Norm Value <= 0", "Count", "Proportion")) %>%
+  kable(col.names = c("Audit 2016", "Norm Value less than or equal to 0", "Count", "Proportion")) %>%
   kable_styling(bootstrap_options = "striped") 
 ```
 
@@ -3495,7 +3405,7 @@ audit %>%
 Audit 2016
 </th>
 <th style="text-align:left;">
-Norm Value \<= 0
+Norm Value less than or equal to 0
 </th>
 <th style="text-align:right;">
 Count
@@ -3690,10 +3600,10 @@ Miller’s (FM) analysis rests, and, then turn to Kocher and Monteiro’s
 (KM) criticism.
 
 Following the logic of border RDDs, which are a special class of sharp
-RDDs[^24], FM rely on municipalities or communes close[^25] to the line
+RDDs[^23], FM rely on municipalities or communes close[^24] to the line
 of demarcation (LOD) to estimate the effect of native governing
 authority - i.e. living in the Vichy, as opposed to the German, zone -
-on resistance activity.[^26] For this effect to be causal, however, FM
+on resistance activity.[^25] For this effect to be causal, however, FM
 have to convincingly argue that communes on the German side are a good
 approximation of the counterfactual of how much resistance would have
 occurred in Vichy communes had those communes been in the German zone
@@ -3709,7 +3619,7 @@ no sorting around the cut-off. The continuity assumption ensures that we
 compare among the comparables, therefore enabling us to identify the
 LATE. Letting $Y_{i}^{1}$ and $Y_{i}^{0}$ denote the potential levels of
 resistance activity for commune $i$ on the German (treatment) and Vichy
-(control) sides of the LOD respectively[^27], letting $X$ denote the
+(control) sides of the LOD respectively[^26], letting $X$ denote the
 distance from the LOD (running variable) and letting $z$ denote the
 location of the LOD, the continuity assumption can be stated in
 potential-outcomes notation. The latter requires that
@@ -3832,7 +3742,7 @@ allows FM to condition on railway infrastructure in communes, i.e. hold
 the latter constant.
 
 Table 1 reports the differences in the NMS between the German and Vichy
-zones for the 5km, 10km, 15km and 20km bandwidths.[^28] Across all
+zones for the 5km, 10km, 15km and 20km bandwidths.[^27] Across all
 bandwidths, FM find that, consistent with their theory, sabotage
 activity is statistically significantly higher in the German zone,
 relative to the Vichy zone ([Ferwerda and Miller 2015,
@@ -3852,9 +3762,9 @@ Via tables 4 and 5, FM seek to demonstrate that their results are robust
 to excluding communes that contain those rail-lines which KM classify as
 strategic. In doing so, FM address KM’s claim that the presence of
 strategic railroads biases their findings by violating the continuity
-assumption for RDDs (see above).[^29]
+assumption for RDDs (see above).[^28]
 
-In table 4, FM exclude the two departments[^30] along the East-West
+In table 4, FM exclude the two departments[^29] along the East-West
 rail-line, Saone-et-Loire and Cher, and report the differences in the
 NMS between the two zones and across various bandwidths ([Ferwerda and
 Miller 2015, 15–16](#ref-ferwerda2015rail)). They exclude Saone-et-Loire
@@ -3888,7 +3798,7 @@ native governing authority.
 
 In light of this debate, what, if any, lessons can we draw for
 conducting historical research by employing border regression
-discontinuity designs. The general utility of these designs is that they
+discontinuity designs? The general utility of these designs is that they
 allow for a systematic, as opposed to a selective, discussion of the
 historical evidence for and against FM’s hypothesis. This is because,
 like all quasi-experimental or design-based empirical methods ([Samii
@@ -4322,54 +4232,43 @@ Wooldridge, J. M. 2012. *Introductory Econometrics: A Modern Approach*.
 [^19]: I shall refer to sub-districts that were served, at least partly,
     by the Lambeth Company as treated sub-districts.
 
-[^20]: Let me provide the mathematical derivations for my interpretation
-    of the R output. Let us write the estimating equation as
-    $Deaths_{i}=\alpha + \beta_{1}Treated_{i}+\beta_{2}PostPeriod_{i}+\beta_{3}Treated_{i}*PostPeriod_{i} + \epsilon_{i}$,
-    where $i$ indexes sub-districts. The coefficient estimates can be
-    written as conditional expectations:
-    $\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0)$,
-    $\beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha$,
-    $\beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha$,
-    and
-    $\beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1)-E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}$.
-
-[^21]: By conventional significance levels, I mean the 1%, 5% and 10%
+[^20]: By conventional significance levels, I mean the 1%, 5% and 10%
     significance levels.
 
-[^22]: Following Fowler ([2013, 171](#ref-fowler2013electoral)), I have
+[^21]: Following Fowler ([2013, 171](#ref-fowler2013electoral)), I have
     omitted the p-values from this table.
 
-[^23]: Those are states that, at a certain point time, had not yet
+[^22]: Those are states that, at a certain point time, had not yet
     adopted compulsory voting.
 
-[^24]: This is because the probability of being treated jumps
+[^23]: This is because the probability of being treated jumps
     deterministically from zero to one at the border.
 
-[^25]: Specifically, they report results based on the 5km, 10km, 15km
+[^24]: Specifically, they report results based on the 5km, 10km, 15km
     and 20km bandwidths around the LOD.
 
-[^26]: FM define resistance activity as either sabotage against
+[^25]: FM define resistance activity as either sabotage against
     infrastructure or resistance-initiated attacks on German or Vichy
     personnel ([Ferwerda and Miller 2014,
     648](#ref-ferwerda2014political)).
 
-[^27]: Here, I follow FM who define treatment as a commune lying on the
+[^26]: Here, I follow FM who define treatment as a commune lying on the
     German side of the LOD ([Ferwerda and Miller 2014,
     648](#ref-ferwerda2014political)).
 
-[^28]: Whilst the 5km bandwidth is reported, the tightest bandwidth FM
+[^27]: Whilst the 5km bandwidth is reported, the tightest bandwidth FM
     use to obtain their point estimates is the 10km one. The reason
     being that for tighter bandwidths the sample size declines sharply,
     which increases variance and reduces statistical power.
 
-[^29]: I have refrained from discussing table 3 in FM’s response. This
+[^28]: I have refrained from discussing table 3 in FM’s response. This
     is because table 3 is not related to KM’s main criticism, namely the
     potential threat to identification posed by the presence of
     strategic double-track railroads. Instead, table 3 examines KM’s
     points concerning the relationship between political orientation and
     resistance activity.
 
-[^30]: More precisely, table 4 is split into three parts. First, they
+[^29]: More precisely, table 4 is split into three parts. First, they
     exclude both departments. Secondly, FM exclude only Cher. Thirdly,
     they omit only Saone-et-Loire. This nuance, however, does not affect
     my substantive points and can, thus, be disregarded here.
