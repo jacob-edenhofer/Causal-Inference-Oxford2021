@@ -1145,7 +1145,7 @@ audit %>%
   dplyr::group_by(audit.2016, norm.value<=0) %>%
   dplyr::summarise(count = n()) %>%
   group_by(audit.2016) %>%
-  mutate(prop = count/sum(count)) %>%
+  mutate(prop = round((count/sum(count))*100, digits = 2)) %>%
   kable(col.names = c("Audit 2016", "Norm Value less than or equal to 0", "Count", "Proportion")) %>%
   kable_styling(bootstrap_options = "striped") 
 ```

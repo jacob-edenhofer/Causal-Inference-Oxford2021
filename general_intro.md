@@ -3394,7 +3394,7 @@ audit %>%
   dplyr::group_by(audit.2016, norm.value<=0) %>%
   dplyr::summarise(count = n()) %>%
   group_by(audit.2016) %>%
-  mutate(prop = count/sum(count)) %>%
+  mutate(prop = round((count/sum(count))*100, digits = 2)) %>%
   kable(col.names = c("Audit 2016", "Norm Value less than or equal to 0", "Count", "Proportion")) %>%
   kable_styling(bootstrap_options = "striped") 
 ```
@@ -3428,7 +3428,7 @@ FALSE
 55
 </td>
 <td style="text-align:right;">
-0.2422907
+24.23
 </td>
 </tr>
 <tr>
@@ -3442,7 +3442,7 @@ TRUE
 172
 </td>
 <td style="text-align:right;">
-0.7577093
+75.77
 </td>
 </tr>
 <tr>
@@ -3456,7 +3456,7 @@ FALSE
 89
 </td>
 <td style="text-align:right;">
-0.3647541
+36.48
 </td>
 </tr>
 <tr>
@@ -3470,7 +3470,7 @@ TRUE
 155
 </td>
 <td style="text-align:right;">
-0.6352459
+63.52
 </td>
 </tr>
 </tbody>
