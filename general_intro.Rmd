@@ -968,7 +968,7 @@ To estimate the incumbency advantage, I will run two regressions of the followin
 Specifically, in my first model I will use a first-order polynomial of the running variable, whilst allowing for different slopes of the lines of best fit at either side of the cut-off by including an interaction term between the binary treatment indicator and the running variable. To probe the robustness of the estimated effect, I modify the above model by including a third-order polynomial in the running variable. This ensures that we do not mistake a non-linear (cubic) increase in the margin of victory at time t=2 for a discontinuity. I do not include any higher-order polynomials in the parametric specification because of the bias-variance trade-off. That is, for a given bandwidth, higher-order polynomials likely reduce the bias in the treatment effect estimator, whilst increasing the latter's variance since the observations per term in the regression are lower than with lower-order polynomials. Hence:
 
 
-```{r broockman-manual-reg}
+```{r broockman-manual-reg, results='asis'}
 rdd_models <- list("Model 1" = lm(dv_c_t2 ~ dv_c_t1 + treated_broock + dv_c_t1*treated_broock, data = broockman_pruned), 
                    "Model 2" = lm(dv_c_t2 ~ dv_c_t1 + I(dv_c_t1^2) + I(dv_c_t1^3) + treated_broock 
                   + dv_c_t1*treated_broock + I(dv_c_t1^2)*treated_broock
@@ -1119,7 +1119,7 @@ As we can see, this is manifestly not the case. Instead, there is two-sided non-
 
 To get a better sense of the relationship between assignment to treatment and actual treatment, I create a table via the following piece of code: 
 
-```{r treatment-table}
+```{r treatment-table, results='asis'}
 audit %>%
   mutate(audit.2016 = as.character(audit.2016)) %>%
   dplyr::group_by(audit.2016, norm.value<=0) %>%
