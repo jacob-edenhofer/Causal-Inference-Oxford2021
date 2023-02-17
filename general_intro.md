@@ -2161,7 +2161,8 @@ written as conditional expectations:
 
 $$
 \begin{aligned}
-\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0) \\ \beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha \\ \beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha \\ \beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1)-E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}
+\alpha = E(Deaths_{i} \vert Treated_{i}=0, PostPerdiod_{i}=0) \\ 
+\beta_{1} = E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)-\alpha \\ \beta_{2}=E(Deaths_{i} \vert Treated_{i}=0, PostPeriod_{i}=1)-\alpha \\ \beta_{3}=[E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=1)-E(Deaths_{i} \vert Treated_{i}=1, PostPeriod_{i}=0)]-\beta_{2}
 \end{aligned}
 $$
 
