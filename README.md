@@ -8,10 +8,11 @@ Jacob Edenhofer
 This repository contains three substantively important files:
 
 - The `general_intro.md` file contains fairly detailed explanations of
-  some of the most commonly used micro-econometric methods. I introduce
-  these methods by replicating the results of well-known political
-  science papers. This, I hope, is more engaging than providing purely
-  abstract explanations.
+  some of the most commonly used micro-econometric methods.
+
+  - I introduce these methods by replicating the results of well-known
+    political science papers. This, I hope, is more engaging than
+    providing purely abstract explanations.
 
 - All of the datasets I use for replication are saved in the `Data`
   folder.
