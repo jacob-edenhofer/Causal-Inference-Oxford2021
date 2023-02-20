@@ -1,7 +1,7 @@
 Some fairly wild notes on causal inference
 ================
 Jacob Edenhofer[^1]
-17 February 2023
+20 February 2023
 
 # Preliminaries
 
@@ -1520,7 +1520,9 @@ are similar to one another on observables ([Morgan and Winship
 allows us to identify causal effects if the conditional independence
 assumption (CIA) holds (selection on observables), i.e. if treatment,
 conditional on observable covariates, is independent of potential
-outcomes.[^15]
+outcomes. In potential outcomes notation, the CIA can be written as
+follows: ${Y_{i}^{1}, Y_{i}^{0}} \perp\kern-5pt\perp X\vert Z$, where
+$X$ indicates treatment and Z is a vector of observables.
 
 For the CIA to be maximally plausible, we would like to match on as many
 observables as possible. This is because there is a greater chance that
@@ -1576,7 +1578,7 @@ expect those units to be more likely to receive treatment.
 To match on propensity scores, I employ the NN algorithm. The NN
 algorithm matches a (randomly selected) treated unit to that control
 unit whose propensity score is closest to the treated unit’s propensity
-score ([Austin 2011](#ref-austin2011introduction)).[^16] Since we will
+score ([Austin 2011](#ref-austin2011introduction)).[^15] Since we will
 use Caliper matching below, it is worth noting that the NN algorithm
 does not restrict the distance between nearest neighbours, i.e. even if
 a unit’s propensity score is significantly different from that of the
@@ -1693,7 +1695,7 @@ insurgents’ (local) power.
 
 We assess the balance of the above matching estimators with and without
 replacement (`set.seed(27688)`) by plotting the absolute standardised
-differences in means in the covariates.[^17] Hence:
+differences in means in the covariates.[^16] Hence:
 
 ``` r
 # balance plot for without replacement
@@ -1967,9 +1969,9 @@ overall plausibility.
 
 In the context of Snow’s study, the parallel trends assumption requires
 that the observed difference in cholera deaths between 1854 (post
-treatment) and 1849 (pre treatment) for control sub-districts[^18] is
+treatment) and 1849 (pre treatment) for control sub-districts[^17] is
 identical to the difference in cholera deaths between 1854 and 1849 that
-would have been observed in treated sub-districts[^19] had those
+would have been observed in treated sub-districts[^18] had those
 sub-districts not been treated. Substantively, this assumption says that
 the change in cholera deaths from 1849 to 1854 in control sub-districts
 is a valid counterfactual for the change in deaths that would have
@@ -2150,7 +2152,7 @@ deaths for the post-treatment (1854), relative to the pre-treatment
 `postcontrol`-`precontrol` from above. The coefficient estimate for
 `postperiod*treated` corresponds to `manual_did` from above and, thus,
 gives us the DiD estimate. The latter is approximately -94.42 and is
-statistically significant at all conventional significance levels.[^20]
+statistically significant at all conventional significance levels.[^19]
 The interpretation is identical to the one provided for `manual_did`.
 
 Finally, let me provide the mathematical derivations for my
@@ -2257,7 +2259,7 @@ reg6_robust_se <- sqrt(diag(cluster.vcov(reg6,
                             cluster = fowler_assembly$state)))
 ```
 
-Next, I summarise the above results in a regression table[^21], which
+Next, I summarise the above results in a regression table[^20], which
 replicates table 2 in Fowler and is created by the following piece of
 code:
 
@@ -2510,7 +2512,7 @@ To explain how tables 2 and 3 help us examine the parallel trends
 assumption, let me, first, explain this assumption in the context of
 Fowler’s paper. The parallel trends assumption requires that the change
 in the dependent variable of interest - turnout, Labor vote and seat
-shares - for control states[^22] from the pre- to the post-treatment
+shares - for control states[^21] from the pre- to the post-treatment
 periods (before and after the adoption of compulsory voting) is
 identical to the change in the dependent variable that would have
 materialised in those states that adopted compulsory voting at a certain
@@ -3601,10 +3603,10 @@ Miller’s (FM) analysis rests, and, then turn to Kocher and Monteiro’s
 (KM) criticism.
 
 Following the logic of border RDDs, which are a special class of sharp
-RDDs[^23], FM rely on municipalities or communes close[^24] to the line
+RDDs[^22], FM rely on municipalities or communes close[^23] to the line
 of demarcation (LOD) to estimate the effect of native governing
 authority - i.e. living in the Vichy, as opposed to the German, zone -
-on resistance activity.[^25] For this effect to be causal, however, FM
+on resistance activity.[^24] For this effect to be causal, however, FM
 have to convincingly argue that communes on the German side are a good
 approximation of the counterfactual of how much resistance would have
 occurred in Vichy communes had those communes been in the German zone
@@ -3620,7 +3622,7 @@ no sorting around the cut-off. The continuity assumption ensures that we
 compare among the comparables, therefore enabling us to identify the
 LATE. Letting $Y_{i}^{1}$ and $Y_{i}^{0}$ denote the potential levels of
 resistance activity for commune $i$ on the German (treatment) and Vichy
-(control) sides of the LOD respectively[^26], letting $X$ denote the
+(control) sides of the LOD respectively[^25], letting $X$ denote the
 distance from the LOD (running variable) and letting $z$ denote the
 location of the LOD, the continuity assumption can be stated in
 potential-outcomes notation. The latter requires that
@@ -3743,7 +3745,7 @@ allows FM to condition on railway infrastructure in communes, i.e. hold
 the latter constant.
 
 Table 1 reports the differences in the NMS between the German and Vichy
-zones for the 5km, 10km, 15km and 20km bandwidths.[^27] Across all
+zones for the 5km, 10km, 15km and 20km bandwidths.[^26] Across all
 bandwidths, FM find that, consistent with their theory, sabotage
 activity is statistically significantly higher in the German zone,
 relative to the Vichy zone ([Ferwerda and Miller 2015,
@@ -3763,9 +3765,9 @@ Via tables 4 and 5, FM seek to demonstrate that their results are robust
 to excluding communes that contain those rail-lines which KM classify as
 strategic. In doing so, FM address KM’s claim that the presence of
 strategic railroads biases their findings by violating the continuity
-assumption for RDDs (see above).[^28]
+assumption for RDDs (see above).[^27]
 
-In table 4, FM exclude the two departments[^29] along the East-West
+In table 4, FM exclude the two departments[^28] along the East-West
 rail-line, Saone-et-Loire and Cher, and report the differences in the
 NMS between the two zones and across various bandwidths ([Ferwerda and
 Miller 2015, 15–16](#ref-ferwerda2015rail)). They exclude Saone-et-Loire
@@ -4215,61 +4217,57 @@ Wooldridge, J. M. 2012. *Introductory Econometrics: A Modern Approach*.
     that is positively correlated with either GDP or institutions will
     bias the results downwards.
 
-[^15]: In potential outcomes notation, the CIA can be written as
-    follows: ${Y_{i}^{1}, Y_{i}^{0}} \perp\kern-5pt\perp X\vert Z$,
-    where $X$ indicates treatment and Z is a vector of observables.
-
-[^16]: If there is more than one control unit with the same absolute
+[^15]: If there is more than one control unit with the same absolute
     distance in propensity scores to the treated unit, one of those
     control units is chosen randomly ([Austin
     2011](#ref-austin2011introduction)).
 
-[^17]: The balance tables are not provided here since their output is
+[^16]: The balance tables are not provided here since their output is
     rather clunky.
 
-[^18]: I shall refer to sub-districts that were served by the Southwark
+[^17]: I shall refer to sub-districts that were served by the Southwark
     & Vauxhall Company as control sub-districts.
 
-[^19]: I shall refer to sub-districts that were served, at least partly,
+[^18]: I shall refer to sub-districts that were served, at least partly,
     by the Lambeth Company as treated sub-districts.
 
-[^20]: By conventional significance levels, I mean the 1%, 5% and 10%
+[^19]: By conventional significance levels, I mean the 1%, 5% and 10%
     significance levels.
 
-[^21]: Following Fowler ([2013, 171](#ref-fowler2013electoral)), I have
+[^20]: Following Fowler ([2013, 171](#ref-fowler2013electoral)), I have
     omitted the p-values from this table.
 
-[^22]: Those are states that, at a certain point time, had not yet
+[^21]: Those are states that, at a certain point time, had not yet
     adopted compulsory voting.
 
-[^23]: This is because the probability of being treated jumps
+[^22]: This is because the probability of being treated jumps
     deterministically from zero to one at the border.
 
-[^24]: Specifically, they report results based on the 5km, 10km, 15km
+[^23]: Specifically, they report results based on the 5km, 10km, 15km
     and 20km bandwidths around the LOD.
 
-[^25]: FM define resistance activity as either sabotage against
+[^24]: FM define resistance activity as either sabotage against
     infrastructure or resistance-initiated attacks on German or Vichy
     personnel ([Ferwerda and Miller 2014,
     648](#ref-ferwerda2014political)).
 
-[^26]: Here, I follow FM who define treatment as a commune lying on the
+[^25]: Here, I follow FM who define treatment as a commune lying on the
     German side of the LOD ([Ferwerda and Miller 2014,
     648](#ref-ferwerda2014political)).
 
-[^27]: Whilst the 5km bandwidth is reported, the tightest bandwidth FM
+[^26]: Whilst the 5km bandwidth is reported, the tightest bandwidth FM
     use to obtain their point estimates is the 10km one. The reason
     being that for tighter bandwidths the sample size declines sharply,
     which increases variance and reduces statistical power.
 
-[^28]: I have refrained from discussing table 3 in FM’s response. This
+[^27]: I have refrained from discussing table 3 in FM’s response. This
     is because table 3 is not related to KM’s main criticism, namely the
     potential threat to identification posed by the presence of
     strategic double-track railroads. Instead, table 3 examines KM’s
     points concerning the relationship between political orientation and
     resistance activity.
 
-[^29]: More precisely, table 4 is split into three parts. First, they
+[^28]: More precisely, table 4 is split into three parts. First, they
     exclude both departments. Secondly, FM exclude only Cher. Thirdly,
     they omit only Saone-et-Loire. This nuance, however, does not affect
     my substantive points and can, thus, be disregarded here.
