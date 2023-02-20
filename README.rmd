@@ -3,10 +3,6 @@ title: "Causal Inference - Coursework"
 author: "Jacob Edenhofer"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: github_document
-fig_caption: yes
-bibliography: bibliography.bib
-link-citations: yes
-linkcolor: cyan
 pandoc_args: --webtex
 always_allow_html: true
 ---
