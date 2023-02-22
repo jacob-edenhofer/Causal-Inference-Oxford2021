@@ -1,7 +1,7 @@
 Causal Inference - Coursework
 ================
 Jacob Edenhofer
-21 February 2023
+22 February 2023
 
 # Overview
 
@@ -11,7 +11,7 @@ This repository contains three substantively important files:
   some of the most commonly used micro-econometric methods.
 
   - I introduce these methods by replicating the results of well-known
-    political science and economics papers. Doing so, I hope, is more
+    political science and economics papers. Doing so is, I hope, more
     engaging than providing purely abstract explanations.
 
 - All of the datasets I use for replication are saved in the `Data`
