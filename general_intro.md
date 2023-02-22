@@ -1,7 +1,7 @@
-Some fairly wild notes on causal inference
+Causal Inference - Hilary Term 2021
 ================
 Jacob Edenhofer[^1]
-20 February 2023
+22 February 2023
 
 # Preliminaries
 
@@ -704,7 +704,7 @@ the instrument, `logem4`, which is summarised in the following table:
 itt <- lm(logpgp95 ~ logem4, data = ajr)
 modelsummary(itt, output = "kableExtra", 
              coef_map = c('(Intercept)' = 'Intercept',
-                          'logem4' = 'Logged Settler Mortality'),
+                          'logem4' = 'Logged settler mortality'),
              gof_omit = 'AIC|BIC|Log.Lik|Adj')
 ```
 
@@ -736,7 +736,7 @@ Intercept
 </tr>
 <tr>
 <td style="text-align:left;">
-Logged Settler Mortality
+Logged settler mortality
 </td>
 <td style="text-align:center;">
 −0.564
@@ -830,7 +830,7 @@ following table reports the estimates from the first-stage regression.
 fstage <- lm(avexpr ~ logem4, data = ajr)
 modelsummary(fstage, output = "kableExtra", 
              coef_map = c('(Intercept)' = 'Intercept',
-                          'logem4' = 'Logged Settler Mortality'),
+                          'logem4' = 'Logged settler mortality'),
              gof_omit = 'AIC|BIC|Log.Lik|Adj')
 ```
 
@@ -862,7 +862,7 @@ Intercept
 </tr>
 <tr>
 <td style="text-align:left;">
-Logged Settler Mortality
+Logged settler mortality
 </td>
 <td style="text-align:center;">
 −0.647
@@ -996,7 +996,10 @@ estimator can be implemented via:
 
 ``` r
 bisls <- ivreg(logpgp95 ~ avexpr | logem4, data = ajr)
-modelsummary(bisls, output = "kableExtra", 
+modelsummary(bisls, 
+             coef_map = c("(Intercept)" = "Intercept", 
+                          "avexpr" = "Avg. protection against\nexpropriation risk, 1985-1995"),
+             output = "kableExtra", 
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
@@ -1013,7 +1016,7 @@ modelsummary(bisls, output = "kableExtra",
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+Intercept
 </td>
 <td style="text-align:center;">
 2.370
@@ -1028,7 +1031,7 @@ modelsummary(bisls, output = "kableExtra",
 </tr>
 <tr>
 <td style="text-align:left;">
-avexpr
+Avg. protection against expropriation risk, 1985-1995
 </td>
 <td style="text-align:center;">
 0.868
@@ -1128,7 +1131,14 @@ models_ajr <- list("Model 1" = ivreg(logpgp95 ~ avexpr | logem4, data = ajr),
   "Model 3" = ivreg(logpgp95 ~ avexpr + africa + lat_abst + asia | logem4 + africa + lat_abst + asia, data = ajr),
 "Model 4" = ivreg(logpgp95 ~ avexpr + africa + lat_abst + asia + rich4 | logem4 + africa + lat_abst + asia + rich4, data = ajr))
 # table 
-modelsummary(models_ajr, output = "kableExtra", 
+modelsummary(models_ajr, 
+             coef_map = c("(Intercept)" = "Intercept", 
+                          "avexpr" = "Avg. protection against\nexpropriation risk, 1985-1995",
+                          "lat_abst" = "Latitude",
+                          "africa" = "Africa dummy", 
+                           "asia" = "Asia dummy",
+                          "rich4" = "Other continent dummy"),
+             output = "kableExtra", 
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
@@ -1154,7 +1164,7 @@ Model 1
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+Intercept
 </td>
 <td style="text-align:center;">
 2.370
@@ -1187,7 +1197,7 @@ Model 1
 </tr>
 <tr>
 <td style="text-align:left;">
-avexpr
+Avg. protection against expropriation risk, 1985-1995
 </td>
 <td style="text-align:center;">
 0.868
@@ -1220,7 +1230,36 @@ avexpr
 </tr>
 <tr>
 <td style="text-align:left;">
-africa
+Latitude
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+−1.410
+</td>
+<td style="text-align:center;">
+−1.152
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+(1.426)
+</td>
+<td style="text-align:center;">
+(1.487)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Africa dummy
 </td>
 <td style="text-align:center;">
 </td>
@@ -1251,36 +1290,7 @@ africa
 </tr>
 <tr>
 <td style="text-align:left;">
-lat_abst
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-−1.410
-</td>
-<td style="text-align:center;">
-−1.152
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-</td>
-<td style="text-align:center;">
-(1.426)
-</td>
-<td style="text-align:center;">
-(1.487)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-asia
+Asia dummy
 </td>
 <td style="text-align:center;">
 </td>
@@ -1309,7 +1319,7 @@ asia
 </tr>
 <tr>
 <td style="text-align:left;">
-rich4
+Other continent dummy
 </td>
 <td style="text-align:center;">
 </td>

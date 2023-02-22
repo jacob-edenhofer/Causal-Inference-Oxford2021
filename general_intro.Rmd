@@ -1,5 +1,5 @@
 ---
-title: "Some fairly wild notes on causal inference"
+title: "Causal Inference - Hilary Term 2021"
 author: "Jacob Edenhofer^[I have benefitted from comments by Ken Stiller in writing up these notes. Comments and corrections are always welcome. Naturally, all mistakes are solely attributable to my own intellectual limitations.]"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: github_document
@@ -278,7 +278,7 @@ Next, we compute the intent-to-treat (ITT) effect. The ITT is given by the coeff
 itt <- lm(logpgp95 ~ logem4, data = ajr)
 modelsummary(itt, output = "kableExtra", 
              coef_map = c('(Intercept)' = 'Intercept',
-                          'logem4' = 'Logged Settler Mortality'),
+                          'logem4' = 'Logged settler mortality'),
              gof_omit = 'AIC|BIC|Log.Lik|Adj')
 ```
 
@@ -308,7 +308,7 @@ For the first-stage assumption to be satisfied, the probability of having high `
 fstage <- lm(avexpr ~ logem4, data = ajr)
 modelsummary(fstage, output = "kableExtra", 
              coef_map = c('(Intercept)' = 'Intercept',
-                          'logem4' = 'Logged Settler Mortality'),
+                          'logem4' = 'Logged settler mortality'),
              gof_omit = 'AIC|BIC|Log.Lik|Adj')
 ```
 
@@ -360,7 +360,10 @@ This brings us to the 2SLS estimator of the LATE, which allows for the straightf
 
 ```{r ajr-two-sls}
 bisls <- ivreg(logpgp95 ~ avexpr | logem4, data = ajr)
-modelsummary(bisls, output = "kableExtra", 
+modelsummary(bisls, 
+             coef_map = c("(Intercept)" = "Intercept", 
+                          "avexpr" = "Avg. protection against\nexpropriation risk, 1985-1995"),
+             output = "kableExtra", 
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
@@ -393,7 +396,14 @@ models_ajr <- list("Model 1" = ivreg(logpgp95 ~ avexpr | logem4, data = ajr),
   "Model 3" = ivreg(logpgp95 ~ avexpr + africa + lat_abst + asia | logem4 + africa + lat_abst + asia, data = ajr),
 "Model 4" = ivreg(logpgp95 ~ avexpr + africa + lat_abst + asia + rich4 | logem4 + africa + lat_abst + asia + rich4, data = ajr))
 # table 
-modelsummary(models_ajr, output = "kableExtra", 
+modelsummary(models_ajr, 
+             coef_map = c("(Intercept)" = "Intercept", 
+                          "avexpr" = "Avg. protection against\nexpropriation risk, 1985-1995",
+                          "lat_abst" = "Latitude",
+                          "africa" = "Africa dummy", 
+                           "asia" = "Asia dummy",
+                          "rich4" = "Other continent dummy"),
+             output = "kableExtra", 
              gof_omit = 'AIC|BIC|Log.Lik|Adj') 
 ```
 
