@@ -1,7 +1,9 @@
 ---
 title: "Causal Inference - Coursework"
-author: "Jacob Edenhofer"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+author: |
+  Jacob Edenhofer
+date: |
+   First edited: 27 December 2022<br>Last edited: `r format(Sys.time(), '%d %B %Y')`
 output: github_document
 pandoc_args: --webtex
 ---

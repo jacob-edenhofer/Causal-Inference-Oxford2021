@@ -1,7 +1,8 @@
 Causal Inference - Coursework
 ================
 Jacob Edenhofer
-22 February 2023
+
+First edited: 27 December 2022<br>Last edited: 27 February 2023
 
 # Overview
 
